@@ -1,0 +1,5 @@
+input=D:\workSpace\ShadowDefender-Pro\samples\ShellExt.dll
+idb=D:\workSpace\ShadowDefender-Pro\samples\ShellExt.dll.i64
+imagebase=0x180000000
+proc=metapc
+bits=64

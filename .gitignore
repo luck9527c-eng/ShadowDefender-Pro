@@ -1,0 +1,29 @@
+# Vendor binaries are deliberately not redistributed.
+#
+# Shadow Defender is commercial software. Copies of its executables and driver
+# must not be published, so the binaries taken from the analysis host are kept
+# out of this repository. The analysis is reproducible from the installation
+# itself: copy the files back into samples/ (see README.md §2 for the list) and
+# run the toolchain. Every relevant hash is recorded in README.md §8 and
+# recon/verification.md (V5) so the correct inputs can be confirmed.
+samples/*.exe
+samples/*.dll
+samples/*.sys
+
+# Working copies of the above, used by the unhide script.
+work/
+
+# IDA databases are large machine-local artifacts and are regenerated on demand.
+*.i64
+*.idb
+*.til
+
+# Python bytecode cache from the tools.
+__pycache__/
+*.pyc
+
+# This installation's own settings file: contains the licence serial (obfuscated
+# but trivially decodable). Deliberately not published. Recreate by copying the
+# file from the analysed installation if you need to follow the worked example
+# in docs/07-config-and-formats.md.
+samples/user.dat

@@ -1,0 +1,6 @@
+0x180006fd0 DllCanUnloadNow
+0x180007000 DllGetClassObject
+0x180007240 DllRegisterServer
+0x180007350 DllUnregisterServer
+0x1800073f0 SetWorkMode
+0x1800082c0 DllEntryPoint

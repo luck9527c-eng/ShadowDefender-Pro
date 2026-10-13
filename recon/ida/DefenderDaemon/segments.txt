@@ -1,0 +1,6 @@
+.text      0x140001000-0x140014000 size=0x13000 perm=R-X class=CODE
+.idata     0x140014000-0x1400144f0 size=0x4f0 perm=R-- class=DATA
+.rdata     0x1400144f0-0x140020000 size=0xbb10 perm=R-- class=DATA
+.data      0x140020000-0x140023000 size=0x3000 perm=RW- class=DATA
+.pdata     0x140023000-0x140025000 size=0x2000 perm=R-- class=DATA
+.reloc     0x140058000-0x140092000 size=0x3a000 perm=RWX class=CODE

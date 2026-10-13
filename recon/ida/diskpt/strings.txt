@@ -1,0 +1,469 @@
+0x28006fbf0 type=0 len=5 refs=0x280051bf5(sub_280051960)
+    .text
+0x28006fca0 type=0 len=46 refs=
+    diskpt!StorDispatchIo: InitializeBitmap Start
+
+0x28006fcd0 type=0 len=45 refs=
+    diskpt!StorDispatchIo: InitializeBitmap Stop
+
+0x28006fd00 type=0 len=97 refs=0x2800557de(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: FltDeviceIoControl(IOCTL_DISK_GET_DRIVE_GEOMETRY) failed(%x)
+
+0x28006fd70 type=0 len=56 refs=0x280055827(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: BytesPerSector = %d
+
+0x28006fdb0 type=0 len=97 refs=0x2800558a5(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: FltDeviceIoControl(IOCTL_DISK_GET_PARTITION_INFO) failed(%x)
+
+0x28006fe20 type=0 len=65 refs=0x280055914(sub_2800556EC),0x280055b32(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: ExAllocatePoolWithTag failed
+
+0x28006fe70 type=0 len=67 refs=0x280055951(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: FltReadWriteSectors failed(%x)
+
+0x28006fec0 type=0 len=63 refs=0x280055985(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: StorFindMapFile failed(%x)
+
+0x28006ff00 type=0 len=65 refs=0x2800559a4(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: ERROR MapWindowCapacity = %d
+
+0x28006ff50 type=0 len=62 refs=0x2800559fb(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: ERROR (MapTableSize = %d)
+
+0x28006ff90 type=0 len=74 refs=0x280055a78(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: MmAllocateContiguousMemory(%d) failed
+
+0x28006ffe0 type=0 len=70 refs=0x280055bee(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: AllocateBitmapSize doesn't match!
+
+0x2800700b0 type=0 len=62 refs=0x28005662c(sub_2800556EC)
+    diskpt!StorInitializeVolumeContext: IoCreateDevice failed(%x)
+
+0x2800700f0 type=0 len=68 refs=
+    diskpt!StorInitializeVolumeContext: IoCreateSymbolicLink failed(%x)
+
+0x280070140 type=0 len=50 refs=
+    diskpt!StorPreInitBitmap: ZwCreateFile failed(%x)
+
+0x280070180 type=0 len=56 refs=
+    diskpt!StorInitializeVolumeContext: PreInitBitmap Start
+
+0x2800701c0 type=0 len=55 refs=
+    diskpt!StorInitializeVolumeContext: PreInitBitmap Stop
+
+0x280070200 type=0 len=68 refs=
+    diskpt!StorInitializeVolumeContext: StorInitializeBitmap failed(%x)
+
+0x280070250 type=0 len=58 refs=0x280058e33(sub_280058DF4)
+    diskpt!StorInitializeBitmap: ExAllocatePoolWithTag failed
+
+0x280070290 type=0 len=56 refs=0x280058e6f(sub_280058DF4)
+    diskpt!StorInitializeBitmap: FltReadWriteSectors failed
+
+0x2800702d0 type=0 len=56 refs=0x280059474(sub_280059420)
+    diskpt!StorInitNtfsBitmap: ExAllocatePoolWithTag failed
+
+0x280070310 type=0 len=58 refs=0x2800594ab(sub_280059420),0x280059574(sub_280059420),0x2800598bc(sub_280059420),0x280059955(sub_280059420)
+    diskpt!StorInitNtfsBitmap: FltReadWriteSectors failed(%x)
+
+0x280070350 type=0 len=57 refs=0x28005953e(sub_280059420)
+    diskpt!StorInitNtfsBitmap: ExAllocatePoolWithTag2 failed
+
+0x280070390 type=0 len=56 refs=0x2800595b6(sub_280059420)
+    diskpt!StorInitNtfsBitmap: Can't find NtfsAttributeData
+
+0x2800703d0 type=0 len=57 refs=0x280059913(sub_280059420)
+    diskpt!StorInitNtfsBitmap: ExAllocatePoolWithTag3 failed
+
+0x280070410 type=0 len=51 refs=0x28005992a(sub_280059420)
+    diskpt!StorInitNtfsBitmap: find Resident attribute
+
+0x280070470 type=0 len=53 refs=0x28005a129(sub_280059FE8)
+    diskpt!StorFindMapFile: ZwCreateFile(%ws) failed(%x)
+
+0x2800704b0 type=0 len=51 refs=0x28005a191(sub_280059FE8)
+    diskpt!StorFindMapFile: ZwReadFile(%ws) failed(%x)
+
+0x2800704f0 type=0 len=54 refs=0x28005a6b8(sub_280059FE8)
+    diskpt!StorFindMapFile: invalid config info(%x-%x-%x)
+
+0x280070530 type=0 len=48 refs=0x28005a21f(sub_280059FE8)
+    diskpt!StorFindMapFile: AllocateBitmapSize = %d
+
+0x280070570 type=0 len=63 refs=0x28005a335(sub_280059FE8)
+    diskpt!StorFindMapFile: ZwQueryInformationFile(%ws) failed(%x)
+
+0x2800705b0 type=0 len=75 refs=0x28005a395(sub_280059FE8)
+    diskpt!StorFindMapFile: map file size(%d) doesn't match volume size(%I64d)
+
+0x280070600 type=0 len=46 refs=0x28005a450(sub_280059FE8)
+    diskpt!StorFindMapFile: ExAllocatePool failed
+
+0x280070630 type=0 len=56 refs=0x28005a478(sub_280059FE8)
+    diskpt!StorFindMapFile: ZwFsControlFile(%ws) failed(%x)
+
+0x280070670 type=0 len=44 refs=0x28005a567(sub_280059FE8)
+    diskpt!StorFindMapFile: unrecognized volume
+
+0x2800706a0 type=0 len=128 refs=0x28005b2e7(sub_28005B1E8)
+    
+ Shadow Defender is committing changes. When this operation
+ completes, your computer will restart or shutdown. Please wait...
+
+0x280070730 type=0 len=21 refs=0x28005b2f8(sub_28005B1E8)
+    
+ Committing %c: ...
+
+0x2800707b0 type=0 len=21 refs=0x28005b4e9(sub_28005B1E8)
+     0 percent completed.
+0x2800707d0 type=0 len=23 refs=0x28005b5da(sub_28005B1E8),0x28005b785(sub_28005B1E8)
+     %d percent completed.
+0x280070df0 type=0 len=51 refs=0x28006be10(sub_28006BD6C)
+    diskpt!FsfTestVolume: ZwCreateFile(%wZ) failed(%x)
+
+0x280070e30 type=0 len=49 refs=0x28006be85(sub_28006BD6C)
+    diskpt!FsfTestVolume: ZwReadFile(%wZ) failed(%x)
+
+0x280070e70 type=0 len=52 refs=0x28006beea(sub_28006BD6C)
+    diskpt!FsfTestVolume: invalid config info(%x-%x-%x)
+
+0x280072a18 type=16777216 len=62 refs=
+    d:\work\defender\sys\diskpt\objfre_win7_amd64\amd64\diskpt.pdb
+0x28007ab2a type=0 len=8 refs=
+    _stricmp
+0x28007ab36 type=0 len=21 refs=
+    ExAllocatePoolWithTag
+0x28007ab4e type=0 len=29 refs=
+    IoBuildDeviceIoControlRequest
+0x28007ab6e type=0 len=20 refs=
+    IoDeleteSymbolicLink
+0x28007ab86 type=0 len=17 refs=
+    ExFreePoolWithTag
+0x28007ab9a type=0 len=18 refs=
+    ExReleaseFastMutex
+0x28007abb0 type=0 len=18 refs=
+    ExAcquireFastMutex
+0x28007abc6 type=0 len=10 refs=
+    ZwReadFile
+0x28007abd4 type=0 len=19 refs=
+    KeSetPriorityThread
+0x28007abea type=0 len=20 refs=
+    RtlInitUnicodeString
+0x28007ac02 type=0 len=14 refs=
+    IoDeleteDevice
+0x28007ac14 type=0 len=10 refs=
+    KeSetEvent
+0x28007ac22 type=0 len=7 refs=
+    wcsncpy
+0x28007ac2c type=0 len=25 refs=
+    MmGetSystemRoutineAddress
+0x28007ac48 type=0 len=40 refs=
+    IoRegisterLastChanceShutdownNotification
+0x28007ac74 type=0 len=24 refs=
+    RtlAppendUnicodeToString
+0x28007ac90 type=0 len=17 refs=
+    KeInitializeEvent
+0x28007aca4 type=0 len=9 refs=
+    IoFreeMdl
+0x28007acb0 type=0 len=22 refs=
+    KeDelayExecutionThread
+0x28007acca type=0 len=12 refs=
+    ZwCreateFile
+0x28007acda type=0 len=7 refs=
+    wcsrchr
+0x28007ace4 type=0 len=6 refs=
+    wcsstr
+0x28007acee type=0 len=20 refs=
+    PsCreateSystemThread
+0x28007ad06 type=0 len=29 refs=
+    IoBuildAsynchronousFsdRequest
+0x28007ad26 type=0 len=15 refs=
+    ZwQueryValueKey
+0x28007ad38 type=0 len=27 refs=
+    ExInterlockedInsertTailList
+0x28007ad56 type=0 len=23 refs=
+    PsTerminateSystemThread
+0x28007ad70 type=0 len=16 refs=
+    InitSafeBootMode
+0x28007ad84 type=0 len=7 refs=
+    ZwClose
+0x28007ad8e type=0 len=18 refs=
+    IofCompleteRequest
+0x28007ada4 type=0 len=25 refs=
+    ObReferenceObjectByHandle
+0x28007adc0 type=0 len=21 refs=
+    KeWaitForSingleObject
+0x28007add8 type=0 len=9 refs=
+    IoFreeIrp
+0x28007ade4 type=0 len=12 refs=
+    PsGetVersion
+0x28007adf4 type=0 len=27 refs=
+    ExInterlockedRemoveHeadList
+0x28007ae12 type=0 len=13 refs=
+    MmUnlockPages
+0x28007ae22 type=0 len=25 refs=
+    ZwQueryInformationProcess
+0x28007ae3e type=0 len=7 refs=
+    _wcsupr
+0x28007ae48 type=0 len=20 refs=
+    IoCreateSymbolicLink
+0x28007ae60 type=0 len=20 refs=
+    RtlCopyUnicodeString
+0x28007ae78 type=0 len=20 refs=
+    ObfDereferenceObject
+0x28007ae90 type=0 len=22 refs=
+    ZwQueryInformationFile
+0x28007aeaa type=0 len=29 refs=
+    ExAllocatePoolWithTagPriority
+0x28007aeca type=0 len=30 refs=
+    IoRegisterFsRegistrationChange
+0x28007aeec type=0 len=13 refs=
+    IofCallDriver
+0x28007aefc type=0 len=9 refs=
+    ZwOpenKey
+0x28007af08 type=0 len=8 refs=
+    _wcsicmp
+0x28007af14 type=0 len=7 refs=
+    sprintf
+0x28007af1e type=0 len=12 refs=
+    ProbeForRead
+0x28007af2e type=0 len=21 refs=
+    IoAcquireRemoveLockEx
+0x28007af46 type=0 len=12 refs=
+    KeClearEvent
+0x28007af56 type=0 len=25 refs=
+    RtlGetElementGenericTable
+0x28007af72 type=0 len=16 refs=
+    KeReadStateEvent
+0x28007af86 type=0 len=31 refs=
+    ExInitializeNPagedLookasideList
+0x28007afa8 type=0 len=15 refs=
+    ZwFsControlFile
+0x28007afba type=0 len=16 refs=
+    IoGetStackLimits
+0x28007afce type=0 len=28 refs=
+    IoBuildSynchronousFsdRequest
+0x28007afee type=0 len=24 refs=
+    IoGetRelatedDeviceObject
+0x28007b00a type=0 len=18 refs=
+    ZwMapViewOfSection
+0x28007b020 type=0 len=8 refs=
+    swprintf
+0x28007b02c type=0 len=14 refs=
+    IoFreeWorkItem
+0x28007b03e type=0 len=28 refs=
+    ExpInterlockedPushEntrySList
+0x28007b05e type=0 len=21 refs=
+    IoReleaseRemoveLockEx
+0x28007b076 type=0 len=24 refs=
+    IoSetThreadHardErrorMode
+0x28007b092 type=0 len=17 refs=
+    KeReleaseSpinLock
+0x28007b0a6 type=0 len=22 refs=
+    MmFreeContiguousMemory
+0x28007b0c0 type=0 len=27 refs=
+    ExpInterlockedPopEntrySList
+0x28007b0de type=0 len=28 refs=
+    RtlDeleteElementGenericTable
+0x28007b0fe type=0 len=14 refs=
+    IoDetachDevice
+0x28007b110 type=0 len=21 refs=
+    RtlEqualUnicodeString
+0x28007b128 type=0 len=25 refs=
+    MmBuildMdlForNonPagedPool
+0x28007b144 type=0 len=17 refs=
+    ObQueryNameString
+0x28007b158 type=0 len=28 refs=
+    MmMapLockedPagesSpecifyCache
+0x28007b178 type=0 len=24 refs=
+    IoGetDeviceObjectPointer
+0x28007b194 type=0 len=20 refs=
+    ZwUnmapViewOfSection
+0x28007b1ac type=0 len=19 refs=
+    IoGetCurrentProcess
+0x28007b1c2 type=0 len=17 refs=
+    ExEventObjectType
+0x28007b1d6 type=0 len=18 refs=
+    IoAllocateWorkItem
+0x28007b1ec type=0 len=19 refs=
+    PoStartNextPowerIrp
+0x28007b202 type=0 len=28 refs=
+    RtlLookupElementGenericTable
+0x28007b222 type=0 len=17 refs=
+    ExQueryDepthSList
+0x28007b236 type=0 len=28 refs=
+    IoReleaseRemoveLockAndWaitEx
+0x28007b256 type=0 len=9 refs=
+    RtlRandom
+0x28007b262 type=0 len=28 refs=
+    IoGetAttachedDeviceReference
+0x28007b282 type=0 len=27 refs=
+    IoAttachDeviceToDeviceStack
+0x28007b2a0 type=0 len=12 refs=
+    PoCallDriver
+0x28007b2b0 type=0 len=23 refs=
+    RtlCompareUnicodeString
+0x28007b2ca type=0 len=13 refs=
+    IoAllocateIrp
+0x28007b2da type=0 len=18 refs=
+    ObfReferenceObject
+0x28007b2f0 type=0 len=20 refs=
+    PsGetCurrentThreadId
+0x28007b308 type=0 len=21 refs=
+    PsGetCurrentProcessId
+0x28007b320 type=0 len=24 refs=
+    IoInitializeRemoveLockEx
+0x28007b33c type=0 len=14 refs=
+    IoCreateDevice
+0x28007b34e type=0 len=15 refs=
+    IoQueueWorkItem
+0x28007b360 type=0 len=11 refs=
+    ZwWriteFile
+0x28007b36e type=0 len=19 refs=
+    IoGetDeviceProperty
+0x28007b384 type=0 len=13 refs=
+    ZwOpenSection
+0x28007b394 type=0 len=8 refs=
+    DbgPrint
+0x28007b3a0 type=0 len=13 refs=
+    IoAllocateMdl
+0x28007b3b0 type=0 len=26 refs=
+    MmAllocateContiguousMemory
+0x28007b3ce type=0 len=22 refs=
+    RtlIsGenericTableEmpty
+0x28007b3e8 type=0 len=25 refs=
+    RtlInitializeGenericTable
+0x28007b404 type=0 len=28 refs=
+    RtlInsertElementGenericTable
+0x28007b424 type=0 len=27 refs=
+    KeAcquireSpinLockRaiseToDpc
+0x28007b442 type=0 len=6 refs=
+    wcschr
+0x28007b44c type=0 len=15 refs=
+    ExQueueWorkItem
+0x28007b45e type=0 len=30 refs=
+    ExAcquireResourceExclusiveLite
+0x28007b480 type=0 len=11 refs=
+    ZwCreateKey
+0x28007b48e type=0 len=21 refs=
+    KeLeaveCriticalRegion
+0x28007b4a6 type=0 len=27 refs=
+    PsSetLoadImageNotifyRoutine
+0x28007b4c4 type=0 len=19 refs=
+    IoGetAttachedDevice
+0x28007b4da type=0 len=25 refs=
+    ZwQuerySymbolicLinkObject
+0x28007b4f6 type=0 len=9 refs=
+    _wcsnicmp
+0x28007b502 type=0 len=12 refs=
+    IoCreateFile
+0x28007b512 type=0 len=13 refs=
+    ZwSetValueKey
+0x28007b522 type=0 len=24 refs=
+    ZwOpenSymbolicLinkObject
+0x28007b53e type=0 len=21 refs=
+    KeEnterCriticalRegion
+0x28007b556 type=0 len=20 refs=
+    ZwSetInformationFile
+0x28007b56e type=0 len=23 refs=
+    IoVolumeDeviceToDosName
+0x28007b588 type=0 len=16 refs=
+    IoFileObjectType
+0x28007b59c type=0 len=14 refs=
+    ExAllocatePool
+0x28007b5ae type=0 len=20 refs=
+    ZwQueryDirectoryFile
+0x28007b5c6 type=0 len=27 refs=
+    ExAcquireResourceSharedLite
+0x28007b5e4 type=0 len=21 refs=
+    ExReleaseResourceLite
+0x28007b5fc type=0 len=30 refs=
+    RtlAppendUnicodeStringToString
+0x28007b61e type=0 len=10 refs=
+    ZwFlushKey
+0x28007b62c type=0 len=27 refs=
+    FsRtlInsertPerStreamContext
+0x28007b64a type=0 len=12 refs=
+    PsThreadType
+0x28007b65a type=0 len=21 refs=
+    ZwDeviceIoControlFile
+0x28007b672 type=0 len=35 refs=
+    FsRtlLookupPerStreamContextInternal
+0x28007b698 type=0 len=30 refs=
+    ExInitializePagedLookasideList
+0x28007b6ba type=0 len=15 refs=
+    ZwCreateSection
+0x28007b6cc type=0 len=24 refs=
+    ExInitializeResourceLite
+0x28007b6e8 type=0 len=22 refs=
+    IoSynchronousPageWrite
+0x28007b702 type=0 len=24 refs=
+    RtlVolumeDeviceToDosName
+0x28007b71e type=0 len=10 refs=
+    _snwprintf
+0x28007b72c type=0 len=16 refs=
+    IoGetTopLevelIrp
+0x28007b740 type=0 len=11 refs=
+    ZwUnloadKey
+0x28007b74e type=0 len=21 refs=
+    ZwQuerySecurityObject
+0x28007b766 type=0 len=25 refs=
+    ExInterlockedPopEntryList
+0x28007b782 type=0 len=16 refs=
+    ZwDeleteValueKey
+0x28007b796 type=0 len=23 refs=
+    FsRtlIsNameInExpression
+0x28007b7b0 type=0 len=19 refs=
+    ZwEnumerateValueKey
+0x28007b7c6 type=0 len=19 refs=
+    ZwSetSecurityObject
+0x28007b7dc type=0 len=9 refs=
+    ZwLoadKey
+0x28007b7e8 type=0 len=16 refs=
+    MmIsAddressValid
+0x28007b7fc type=0 len=26 refs=
+    ExInterlockedPushEntryList
+0x28007b81a type=0 len=11 refs=
+    ZwDeleteKey
+0x28007b828 type=0 len=12 refs=
+    KeBugCheckEx
+0x28007b836 type=0 len=12 refs=0x28007a584(?)
+    ntoskrnl.exe
+0x28007b846 type=0 len=25 refs=
+    KeQueryPerformanceCounter
+0x28007b860 type=0 len=7 refs=0x28007a598(?)
+    HAL.dll
+0x28007b86a type=0 len=21 refs=
+    ObOpenObjectByPointer
+0x28007b882 type=0 len=18 refs=
+    IoDeviceObjectType
+0x28007b898 type=0 len=27 refs=
+    RtlLengthSecurityDescriptor
+0x28007b8b6 type=0 len=27 refs=
+    SeCaptureSecurityDescriptor
+0x28007b8d4 type=0 len=27 refs=
+    RtlCreateSecurityDescriptor
+0x28007b8f2 type=0 len=28 refs=
+    RtlSetDaclSecurityDescriptor
+0x28007b912 type=0 len=27 refs=
+    RtlAbsoluteToSelfRelativeSD
+0x28007b930 type=0 len=23 refs=
+    IoIsWdmVersionAvailable
+0x28007b94a type=0 len=9 refs=
+    SeExports
+0x28007b956 type=0 len=12 refs=
+    RtlLengthSid
+0x28007b966 type=0 len=22 refs=
+    RtlAddAccessAllowedAce
+0x28007b980 type=0 len=28 refs=
+    RtlGetSaclSecurityDescriptor
+0x28007b9a0 type=0 len=28 refs=
+    RtlGetDaclSecurityDescriptor
+0x28007b9c0 type=0 len=29 refs=
+    RtlGetGroupSecurityDescriptor
+0x28007b9e0 type=0 len=29 refs=
+    RtlGetOwnerSecurityDescriptor
+0x28007ba00 type=0 len=20 refs=
+    RtlFreeUnicodeString
+0x28007ba2c type=0 len=20 refs=
+    __C_specific_handler

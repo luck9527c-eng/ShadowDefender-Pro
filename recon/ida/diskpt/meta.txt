@@ -1,0 +1,5 @@
+input=D:\workSpace\ShadowDefender-Pro\samples\diskpt.sys
+idb=D:\workSpace\ShadowDefender-Pro\samples\diskpt.sys.i64
+imagebase=0x280051000
+proc=metapc
+bits=64

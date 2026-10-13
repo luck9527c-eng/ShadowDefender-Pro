@@ -1,0 +1,136 @@
+Database D:\workSpace\ShadowDefender-Pro\samples\Service.exe.id0 already exists.
+Do you want to overwrite it? -> ~L~oad existing
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   524288    64 8192 allocating memory for b-tree...
+   466944    57 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  1253376            total memory allocated
+
+Loading processor module D:\Apps\IDApro\procs\pc.dll for metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'Service.exe' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.4.0.260713)
+  License: 14-0000-FFFF-88  (1 user)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+Hex-rays version 9.4.0.260713 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded (idalib mode, server managed externally)
+Using type parser: legacy
+Using FLIRT signature: Microsoft VisualC v14 64bit runtime
+Using FLIRT signature: Microsoft VisualC 64bit universal runtime
+Using FLIRT signature: SEH for vc64 7-14
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:52: DeprecationWarning: getseg() is deprecated, use get_segment_info()
+  s = ida_segment.getseg(seg_ea)
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:56: DeprecationWarning: get_segm_name() is deprecated, use get_segment_name()
+  ida_segment.get_segm_name(s),
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:66: DeprecationWarning: get_segm_class() is deprecated, use get_segment_class()
+  ida_segment.get_segm_class(s),
+Traceback (most recent call last):
+  File "D:/workSpace/ShadowDefender-Pro/tools/ida_export.py", line 167, in <module>
+    main()
+    ~~~~^^
+  File "D:/workSpace/ShadowDefender-Pro/tools/ida_export.py", line 88, in main
+    for ea, stype, sval in idautils.Strings():
+        ^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable StringItem object
+Flushing buffers, please wait...ok
+Unloading IDP module D:\Apps\IDApro\procs\pc.dll...Database D:\workSpace\ShadowDefender-Pro\samples\Service.exe.i64 already exists.
+Do you want to overwrite it? -> ~L~oad existing
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   753664    92 8192 allocating memory for b-tree...
+   466944    57 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  1482752            total memory allocated
+
+Loading processor module D:\Apps\IDApro\procs\pc.dll for metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'Service.exe' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.4.0.260713)
+  License: 14-0000-FFFF-88  (1 user)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+Hex-rays version 9.4.0.260713 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded (idalib mode, server managed externally)
+Using type parser: legacy
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:52: DeprecationWarning: getseg() is deprecated, use get_segment_info()
+  s = ida_segment.getseg(seg_ea)
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:56: DeprecationWarning: get_segm_name() is deprecated, use get_segment_name()
+  ida_segment.get_segm_name(s),
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:66: DeprecationWarning: get_segm_class() is deprecated, use get_segment_class()
+  ida_segment.get_segm_class(s),
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:97: DeprecationWarning: get_func() is deprecated, use get_func_start or get_func_entry_info()
+  fn = ida_funcs.get_func(xref.frm)
+Traceback (most recent call last):
+  File "D:/workSpace/ShadowDefender-Pro/tools/ida_export.py", line 169, in <module>
+    main()
+    ~~~~^^
+  File "D:/workSpace/ShadowDefender-Pro/tools/ida_export.py", line 102, in main
+    % (ea, ida_nalt.get_str_type_name(stype), len(sv), ",".join(refs[:12]), sv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'ida_nalt' has no attribute 'get_str_type_name'. Did you mean: 'get_str_type_code'?
+Flushing buffers, please wait...ok
+Unloading IDP module D:\Apps\IDApro\procs\pc.dll...Database D:\workSpace\ShadowDefender-Pro\samples\Service.exe.i64 already exists.
+Do you want to overwrite it? -> ~L~oad existing
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+   753664    92 8192 allocating memory for b-tree...
+   466944    57 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  1482752            total memory allocated
+
+Loading processor module D:\Apps\IDApro\procs\pc.dll for metapc...OK
+Loading type libraries...
+Autoanalysis subsystem has been initialized.
+Database for file 'Service.exe' has been loaded.
+Hex-Rays Decompiler plugin has been loaded (v9.4.0.260713)
+  License: 14-0000-FFFF-88  (1 user)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+Hex-rays version 9.4.0.260713 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded (idalib mode, server managed externally)
+Using type parser: legacy
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:52: DeprecationWarning: getseg() is deprecated, use get_segment_info()
+  s = ida_segment.getseg(seg_ea)
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:56: DeprecationWarning: get_segm_name() is deprecated, use get_segment_name()
+  ida_segment.get_segm_name(s),
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:66: DeprecationWarning: get_segm_class() is deprecated, use get_segment_class()
+  ida_segment.get_segm_class(s),
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:97: DeprecationWarning: get_func() is deprecated, use get_func_start or get_func_entry_info()
+  fn = ida_funcs.get_func(xref.frm)
+D:/workSpace/ShadowDefender-Pro/tools/ida_export.py:111: DeprecationWarning: getn_func() is deprecated, use get_func_ea_by_num or get_func_entry_info_by_num()
+  fn = ida_funcs.getn_func(i)
+The decompiler assumes that the segment '.idata' is read-only because of its NAME.
+All data references to the segment will be replaced by constant values.
+This may lead to drastic changes in the decompiler output.
+If the segment is not read-only, please change the segment NAME.
+
+In general, the decompiler checks the segment permissions, class, and name
+to determine if it is read-only.
+ -> OK
+The decompiler assumes that the segment '.rdata' is read-only because of its NAME.
+All data references to the segment will be replaced by constant values.
+This may lead to drastic changes in the decompiler output.
+If the segment is not read-only, please change the segment NAME.
+
+In general, the decompiler checks the segment permissions, class, and name
+to determine if it is read-only.
+ -> OK
+EXPORT DONE functions=370 decompiled=370 strings=312 -> D:/workSpace/ShadowDefender-Pro/recon/ida/Service
+Flushing buffers, please wait...ok
+Unloading IDP module D:\Apps\IDApro\procs\pc.dll...

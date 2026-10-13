@@ -1,0 +1,502 @@
+{
+ "0": {
+  "delta": null,
+  "opoff": null
+ },
+ "1": {
+  "delta": null,
+  "opoff": null
+ },
+ "2": {
+  "delta": 11,
+  "opoff": 0
+ },
+ "3": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "4": {
+  "delta": null,
+  "opoff": null
+ },
+ "5": {
+  "delta": null,
+  "opoff": null
+ },
+ "6": {
+  "delta": null,
+  "opoff": null
+ },
+ "7": {
+  "delta": 11,
+  "opoff": null
+ },
+ "8": {
+  "delta": null,
+  "opoff": null
+ },
+ "9": {
+  "delta": null,
+  "opoff": null
+ },
+ "10": {
+  "delta": null,
+  "opoff": null
+ },
+ "11": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "12": {
+  "delta": null,
+  "opoff": null
+ },
+ "13": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "14": {
+  "delta": 20,
+  "opoff": null
+ },
+ "15": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "16": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "17": {
+  "delta": 11,
+  "opoff": null
+ },
+ "18": {
+  "delta": null,
+  "opoff": null
+ },
+ "19": {
+  "delta": null,
+  "opoff": null
+ },
+ "20": {
+  "delta": null,
+  "opoff": null
+ },
+ "22": {
+  "delta": null,
+  "opoff": null
+ },
+ "23": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "25": {
+  "delta": 11,
+  "opoff": 0
+ },
+ "26": {
+  "delta": 11,
+  "opoff": 0
+ },
+ "27": {
+  "delta": null,
+  "opoff": null
+ },
+ "28": {
+  "delta": null,
+  "opoff": null
+ },
+ "29": {
+  "delta": 11,
+  "opoff": null
+ },
+ "30": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "31": {
+  "delta": null,
+  "opoff": null
+ },
+ "32": {
+  "delta": null,
+  "opoff": null
+ },
+ "33": {
+  "delta": null,
+  "opoff": null
+ },
+ "34": {
+  "delta": null,
+  "opoff": null
+ },
+ "35": {
+  "delta": null,
+  "opoff": null
+ },
+ "36": {
+  "delta": null,
+  "opoff": null
+ },
+ "37": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "38": {
+  "delta": null,
+  "opoff": null
+ },
+ "39": {
+  "delta": null,
+  "opoff": null
+ },
+ "40": {
+  "delta": null,
+  "opoff": null
+ },
+ "41": {
+  "delta": null,
+  "opoff": null
+ },
+ "42": {
+  "delta": null,
+  "opoff": null
+ },
+ "43": {
+  "delta": 11,
+  "opoff": 0
+ },
+ "44": {
+  "delta": null,
+  "opoff": null
+ },
+ "45": {
+  "delta": 20,
+  "opoff": 13
+ },
+ "46": {
+  "delta": null,
+  "opoff": null
+ },
+ "47": {
+  "delta": 13,
+  "opoff": null
+ },
+ "48": {
+  "delta": null,
+  "opoff": null
+ },
+ "49": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "50": {
+  "delta": null,
+  "opoff": null
+ },
+ "51": {
+  "delta": null,
+  "opoff": null
+ },
+ "52": {
+  "delta": null,
+  "opoff": null
+ },
+ "53": {
+  "delta": 10,
+  "opoff": null
+ },
+ "54": {
+  "delta": null,
+  "opoff": null
+ },
+ "55": {
+  "delta": null,
+  "opoff": null
+ },
+ "56": {
+  "delta": null,
+  "opoff": null
+ },
+ "58": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "59": {
+  "delta": null,
+  "opoff": null
+ },
+ "60": {
+  "delta": null,
+  "opoff": null
+ },
+ "61": {
+  "delta": 13,
+  "opoff": 11
+ },
+ "64": {
+  "delta": null,
+  "opoff": null
+ },
+ "65": {
+  "delta": null,
+  "opoff": null
+ },
+ "66": {
+  "delta": 13,
+  "opoff": 11
+ },
+ "67": {
+  "delta": 11,
+  "opoff": null
+ },
+ "68": {
+  "delta": 11,
+  "opoff": null
+ },
+ "69": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "70": {
+  "delta": null,
+  "opoff": null
+ },
+ "71": {
+  "delta": null,
+  "opoff": null
+ },
+ "72": {
+  "delta": null,
+  "opoff": null
+ },
+ "73": {
+  "delta": 11,
+  "opoff": 0
+ },
+ "74": {
+  "delta": null,
+  "opoff": null
+ },
+ "75": {
+  "delta": 10,
+  "opoff": 0
+ },
+ "76": {
+  "delta": null,
+  "opoff": null
+ },
+ "77": {
+  "delta": null,
+  "opoff": null
+ },
+ "78": {
+  "delta": null,
+  "opoff": null
+ },
+ "79": {
+  "delta": null,
+  "opoff": null
+ },
+ "80": {
+  "delta": null,
+  "opoff": null
+ },
+ "81": {
+  "delta": 13,
+  "opoff": null
+ },
+ "82": {
+  "delta": null,
+  "opoff": null
+ },
+ "83": {
+  "delta": 13,
+  "opoff": 11
+ },
+ "84": {
+  "delta": 11,
+  "opoff": null
+ },
+ "85": {
+  "delta": null,
+  "opoff": null
+ },
+ "86": {
+  "delta": null,
+  "opoff": null
+ },
+ "87": {
+  "delta": null,
+  "opoff": null
+ },
+ "88": {
+  "delta": null,
+  "opoff": null
+ },
+ "89": {
+  "delta": null,
+  "opoff": null
+ },
+ "90": {
+  "delta": 10,
+  "opoff": 0
+ },
+ "91": {
+  "delta": null,
+  "opoff": null
+ },
+ "92": {
+  "delta": 10,
+  "opoff": null
+ },
+ "93": {
+  "delta": null,
+  "opoff": null
+ },
+ "94": {
+  "delta": null,
+  "opoff": null
+ },
+ "95": {
+  "delta": null,
+  "opoff": null
+ },
+ "96": {
+  "delta": 11,
+  "opoff": null
+ },
+ "97": {
+  "delta": null,
+  "opoff": null
+ },
+ "98": {
+  "delta": 11,
+  "opoff": 0
+ },
+ "99": {
+  "delta": null,
+  "opoff": null
+ },
+ "101": {
+  "delta": null,
+  "opoff": null
+ },
+ "102": {
+  "delta": null,
+  "opoff": null
+ },
+ "103": {
+  "delta": null,
+  "opoff": null
+ },
+ "104": {
+  "delta": null,
+  "opoff": null
+ },
+ "105": {
+  "delta": null,
+  "opoff": null
+ },
+ "106": {
+  "delta": null,
+  "opoff": null
+ },
+ "107": {
+  "delta": null,
+  "opoff": null
+ },
+ "108": {
+  "delta": null,
+  "opoff": null
+ },
+ "110": {
+  "delta": null,
+  "opoff": null
+ },
+ "111": {
+  "delta": 11,
+  "opoff": 0
+ },
+ "112": {
+  "delta": null,
+  "opoff": null
+ },
+ "113": {
+  "delta": null,
+  "opoff": null
+ },
+ "114": {
+  "delta": null,
+  "opoff": null
+ },
+ "115": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "116": {
+  "delta": null,
+  "opoff": null
+ },
+ "117": {
+  "delta": 11,
+  "opoff": null
+ },
+ "118": {
+  "delta": null,
+  "opoff": null
+ },
+ "119": {
+  "delta": null,
+  "opoff": null
+ },
+ "120": {
+  "delta": null,
+  "opoff": null
+ },
+ "121": {
+  "delta": null,
+  "opoff": null
+ },
+ "123": {
+  "delta": null,
+  "opoff": null
+ },
+ "124": {
+  "delta": null,
+  "opoff": null
+ },
+ "126": {
+  "delta": null,
+  "opoff": null
+ },
+ "127": {
+  "delta": null,
+  "opoff": null
+ },
+ "128": {
+  "delta": 13,
+  "opoff": 11
+ },
+ "129": {
+  "delta": null,
+  "opoff": null
+ },
+ "130": {
+  "delta": null,
+  "opoff": null
+ },
+ "131": {
+  "delta": 11,
+  "opoff": 251
+ },
+ "133": {
+  "delta": null,
+  "opoff": null
+ },
+ "134": {
+  "delta": null,
+  "opoff": null
+ }
+}

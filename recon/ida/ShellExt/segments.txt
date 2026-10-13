@@ -1,0 +1,9 @@
+HEADER     0x180000000-0x180001000 size=0x1000 perm=--- class=DATA
+.text      0x180001000-0x18001a000 size=0x19000 perm=R-X class=CODE
+.idata     0x18001a000-0x18001a470 size=0x470 perm=R-- class=DATA
+.rdata     0x18001a470-0x180029000 size=0xeb90 perm=R-- class=DATA
+.data      0x180029000-0x18002a120 size=0x1120 perm=RW- class=DATA
+.idata     0x18002a120-0x18002a138 size=0x18 perm=RW- class=XTRN
+.data      0x18002a138-0x18002c000 size=0x1ec8 perm=RW- class=DATA
+.pdata     0x18002c000-0x18002e000 size=0x2000 perm=R-- class=DATA
+.reloc     0x180030000-0x180064000 size=0x34000 perm=RWX class=CODE

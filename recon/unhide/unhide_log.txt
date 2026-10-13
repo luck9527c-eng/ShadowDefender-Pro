@@ -1,0 +1,17 @@
+imagebase=0x280050000
+section .reloc 0x28007d000-0x2800c6000
+set_segm_attr(PERM) -> True
+set_segm_class -> True
+set_segm_name -> True
+table targets seeded=125 failed=11
+idx21 rva=0x3533f create_insn=7 add_func=False
+idx24 rva=0x35ccd create_insn=3 add_func=False
+idx57 rva=0x429ed create_insn=7 add_func=False
+idx62 rva=0x4802f create_insn=3 add_func=False
+idx63 rva=0x484cb create_insn=6 add_func=False
+idx100 rva=0x5a26c create_insn=3 add_func=False
+idx109 rva=0x5b801 create_insn=7 add_func=False
+idx122 rva=0x60279 create_insn=3 add_func=False
+idx125 rva=0x60bcd create_insn=7 add_func=False
+idx132 rva=0x66201 create_insn=7 add_func=False
+idx135 rva=0x66c51 create_insn=7 add_func=False

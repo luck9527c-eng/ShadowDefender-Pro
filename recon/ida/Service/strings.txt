@@ -1,0 +1,628 @@
+0x1400114f0 type=0 len=8 refs=0x1400034dd(__vcrt_FlsAlloc),0x1400034ed(__vcrt_FlsAlloc)
+    FlsAlloc
+0x140011508 type=0 len=7 refs=0x140003524(__vcrt_FlsFree),0x140003537(__vcrt_FlsFree)
+    FlsFree
+0x140011518 type=0 len=11 refs=0x140003571(__vcrt_FlsSetValue),0x14000357a(__vcrt_FlsSetValue)
+    FlsSetValue
+0x140011530 type=0 len=27 refs=0x1400035ca(__vcrt_InitializeCriticalSectionEx),0x1400035dd(__vcrt_InitializeCriticalSectionEx)
+    InitializeCriticalSectionEx
+0x140011888 type=0 len=8 refs=0x140011550(?)
+    __based(
+0x140011898 type=0 len=7 refs=0x140011558(?)
+    __cdecl
+0x1400118a0 type=0 len=8 refs=0x140011560(?)
+    __pascal
+0x1400118b0 type=0 len=9 refs=0x140011568(?)
+    __stdcall
+0x1400118c0 type=0 len=10 refs=0x140011570(?)
+    __thiscall
+0x1400118d0 type=0 len=10 refs=0x140011578(?)
+    __fastcall
+0x1400118e0 type=0 len=12 refs=0x140011580(?)
+    __vectorcall
+0x1400118f0 type=0 len=9 refs=0x140011588(?)
+    __clrcall
+0x1400118fc type=0 len=6 refs=0x140011590(?)
+    __eabi
+0x140011908 type=0 len=9 refs=0x140011598(?)
+    __swift_1
+0x140011918 type=0 len=9 refs=0x1400115a0(?)
+    __swift_2
+0x140011928 type=0 len=7 refs=0x1400115a8(?)
+    __ptr64
+0x140011930 type=0 len=10 refs=0x1400115b0(?)
+    __restrict
+0x140011940 type=0 len=11 refs=0x1400115b8(?)
+    __unaligned
+0x140011950 type=0 len=9 refs=0x1400115c0(?)
+    restrict(
+0x140011968 type=0 len=7 refs=0x1400115d8(?)
+     delete
+0x140011990 type=0 len=8 refs=0x140011618(?)
+    operator
+0x140011a18 type=0 len=9 refs=0x140011718(?)
+    `vftable'
+0x140011a28 type=0 len=9 refs=0x140011720(?)
+    `vbtable'
+0x140011a38 type=0 len=7 refs=0x140011728(?)
+    `vcall'
+0x140011a40 type=0 len=8 refs=0x140011730(?)
+    `typeof'
+0x140011a50 type=0 len=20 refs=0x140011738(?)
+    `local static guard'
+0x140011a68 type=0 len=8 refs=0x140011740(?)
+    `string'
+0x140011a78 type=0 len=18 refs=0x140011748(?)
+    `vbase destructor'
+0x140011a90 type=0 len=28 refs=0x140011750(?)
+    `vector deleting destructor'
+0x140011ab0 type=0 len=29 refs=0x140011758(?)
+    `default constructor closure'
+0x140011ad0 type=0 len=28 refs=0x140011760(?)
+    `scalar deleting destructor'
+0x140011af0 type=0 len=29 refs=0x140011768(?)
+    `vector constructor iterator'
+0x140011b10 type=0 len=28 refs=0x140011770(?)
+    `vector destructor iterator'
+0x140011b30 type=0 len=35 refs=0x140011778(?)
+    `vector vbase constructor iterator'
+0x140011b58 type=0 len=26 refs=0x140011780(?)
+    `virtual displacement map'
+0x140011b78 type=0 len=32 refs=0x140011788(?)
+    `eh vector constructor iterator'
+0x140011ba0 type=0 len=31 refs=0x140011790(?)
+    `eh vector destructor iterator'
+0x140011bc0 type=0 len=38 refs=0x140011798(?)
+    `eh vector vbase constructor iterator'
+0x140011be8 type=0 len=26 refs=0x1400117a0(?)
+    `copy constructor closure'
+0x140011c08 type=0 len=15 refs=0x1400117a8(?)
+    `udt returning'
+0x140011c1c type=0 len=5 refs=0x1400117b8(?)
+    `RTTI
+0x140011c28 type=0 len=15 refs=0x1400117c0(?)
+    `local vftable'
+0x140011c38 type=0 len=35 refs=0x1400117c8(?)
+    `local vftable constructor closure'
+0x140011c5c type=0 len=6 refs=0x1400117d0(?)
+     new[]
+0x140011c68 type=0 len=9 refs=0x1400117d8(?)
+     delete[]
+0x140011c78 type=0 len=14 refs=0x1400117e0(?)
+    `omni callsig'
+0x140011c88 type=0 len=26 refs=0x1400117e8(?)
+    `placement delete closure'
+0x140011ca8 type=0 len=28 refs=0x1400117f0(?)
+    `placement delete[] closure'
+0x140011cc8 type=0 len=37 refs=0x1400117f8(?)
+    `managed vector constructor iterator'
+0x140011cf0 type=0 len=36 refs=0x140011800(?)
+    `managed vector destructor iterator'
+0x140011d18 type=0 len=37 refs=0x140011808(?)
+    `eh vector copy constructor iterator'
+0x140011d40 type=0 len=43 refs=0x140011810(?)
+    `eh vector vbase copy constructor iterator'
+0x140011d70 type=0 len=26 refs=0x140011818(?)
+    `dynamic initializer for '
+0x140011d90 type=0 len=32 refs=0x140011820(?)
+    `dynamic atexit destructor for '
+0x140011db8 type=0 len=34 refs=0x140011828(?)
+    `vector copy constructor iterator'
+0x140011de0 type=0 len=40 refs=0x140011830(?)
+    `vector vbase copy constructor iterator'
+0x140011e10 type=0 len=42 refs=0x140011838(?)
+    `managed vector copy constructor iterator'
+0x140011e40 type=0 len=27 refs=0x140011840(?)
+    `local static thread guard'
+0x140011e60 type=0 len=12 refs=0x140011848(?)
+    operator "" 
+0x140011e70 type=0 len=17 refs=0x140011850(?)
+    operator co_await
+0x140011e88 type=0 len=17 refs=0x140011860(?)
+     Type Descriptor'
+0x140011ea0 type=0 len=27 refs=0x140011868(?)
+     Base Class Descriptor at (
+0x140011ec0 type=0 len=18 refs=0x140011870(?)
+     Base Class Array'
+0x140011ed8 type=0 len=28 refs=0x140011878(?)
+     Class Hierarchy Descriptor'
+0x140011ef8 type=0 len=25 refs=0x140011880(?)
+     Complete Object Locator'
+0x140011f45 type=0 len=5 refs=
+    ('8PW
+0x140011f4e type=0 len=5 refs=
+    700PP
+0x140011f60 type=0 len=17 refs=
+    `h`hhhxwpwpp
+0x140011f7c type=0 len=6 refs=0x140004944(unknown_libname_7),0x140004f41(unknown_libname_11)
+    (null)
+0x140012090 type=0 len=14 refs=0x140006087(?try_cor_exit_process@@YAXI@Z)
+    CorExitProcess
+0x140012308 type=0 len=9 refs=0x1400089ad(?fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z)
+    NAN(SNAN)
+0x140012318 type=0 len=9 refs=0x1400089b8(?fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z)
+    nan(snan)
+0x140012328 type=0 len=8 refs=0x1400089c3(?fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z)
+    NAN(IND)
+0x140012338 type=0 len=8 refs=0x1400089ce(?fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z)
+    nan(ind)
+0x140012344 type=0 len=5 refs=0x1400085a7(?fp_format_e_internal@@YAHQEAD_KH_NIQEAU_strflt@@2QEAU__crt_locale_pointers@@@Z)
+    e+000
+0x14001262c type=0 len=6 refs=0x140012388(?)
+    Sunday
+0x140012634 type=0 len=6 refs=0x140012390(?)
+    Monday
+0x140012640 type=0 len=7 refs=0x140012398(?)
+    Tuesday
+0x140012648 type=0 len=9 refs=0x1400123a0(?)
+    Wednesday
+0x140012658 type=0 len=8 refs=0x1400123a8(?)
+    Thursday
+0x140012664 type=0 len=6 refs=0x1400123b0(?)
+    Friday
+0x140012670 type=0 len=8 refs=0x1400123b8(?)
+    Saturday
+0x1400126b0 type=0 len=7 refs=0x140012420(?)
+    January
+0x1400126b8 type=0 len=8 refs=0x140012428(?)
+    February
+0x1400126c4 type=0 len=5 refs=0x140012430(?)
+    March
+0x1400126cc type=0 len=5 refs=0x140012438(?)
+    April
+0x1400126e4 type=0 len=6 refs=0x140012458(?)
+    August
+0x1400126f0 type=0 len=9 refs=0x140012460(?)
+    September
+0x140012700 type=0 len=7 refs=0x140012468(?)
+    October
+0x140012708 type=0 len=8 refs=0x140012470(?)
+    November
+0x140012718 type=0 len=8 refs=0x140012478(?)
+    December
+0x140012730 type=0 len=8 refs=0x140012490(?)
+    MM/dd/yy
+0x140012740 type=0 len=19 refs=0x140012498(?)
+    dddd, MMMM dd, yyyy
+0x140012758 type=0 len=8 refs=0x1400124a0(?)
+    HH:mm:ss
+0x140012fb8 type=0 len=8 refs=0x140009169(__acrt_FlsAlloc),0x14000917c(__acrt_FlsAlloc)
+    FlsAlloc
+0x140012fd0 type=0 len=7 refs=0x1400091c0(__acrt_FlsFree),0x1400091d3(__acrt_FlsFree)
+    FlsFree
+0x140012fe0 type=0 len=11 refs=0x140009218(__vcrt_FlsFree_0),0x14000922b(__vcrt_FlsFree_0)
+    FlsGetValue
+0x140012ff8 type=0 len=11 refs=0x140009276(__acrt_FlsSetValue),0x14000927f(__acrt_FlsSetValue)
+    FlsSetValue
+0x140013010 type=0 len=19 refs=0x1400094f2(__acrt_is_packaged_app),0x140009505(__acrt_is_packaged_app)
+    GetCurrentPackageId
+0x140013030 type=0 len=27 refs=0x1400092e3(__acrt_InitializeCriticalSectionEx),0x1400092f6(__acrt_InitializeCriticalSectionEx)
+    InitializeCriticalSectionEx
+0x140013058 type=0 len=13 refs=0x140009365(__acrt_LCMapStringEx),0x140009376(__acrt_LCMapStringEx)
+    LCMapStringEx
+0x140013070 type=0 len=16 refs=0x140009445(__acrt_LocaleNameToLCID),0x14000944f(__acrt_LocaleNameToLCID)
+    LocaleNameToLCID
+0x140013477 type=0 len=5 refs=
+    	
+
+0x140013490 type=0 len=95 refs=
+     !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+0x1400135f7 type=0 len=5 refs=
+    	
+
+0x140013610 type=0 len=95 refs=
+     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+0x140013a4c type=0 len=7 refs=
+    [aOni*{
+0x140013b23 type=0 len=5 refs=
+    eLK(w
+0x140013b8f type=0 len=5 refs=
+    FEMh
+0x140013c2d type=0 len=6 refs=
+    ~ $s%r
+0x140013c3b type=0 len=7 refs=
+    @b;zO]
+0x140013d54 type=0 len=5 refs=
+    iu+-,
+0x140013dc5 type=0 len=5 refs=
+    obwQ4
+0x140014017 type=0 len=6 refs=
+    v2!L.2
+0x14001419a type=0 len=5 refs=
+    ^<V7w
+0x1400142d0 type=0 len=5 refs=0x14000db47(__acrt_fltout)
+    1#INF
+0x1400142d8 type=0 len=6 refs=0x14000db28(__acrt_fltout)
+    1#QNAN
+0x1400142e0 type=0 len=6 refs=0x14000db09(__acrt_fltout)
+    1#SNAN
+0x1400142e8 type=0 len=5 refs=0x14000daea(__acrt_fltout)
+    1#IND
+0x14001806f type=0 len=6 refs=
+    =imb;D
+0x1400181d9 type=0 len=8 refs=
+    1<.	/>:
+0x14001821e type=0 len=6 refs=
+    />58d%
+0x140018256 type=0 len=5 refs=
+    !>6'Y
+0x140018267 type=0 len=6 refs=
+    >jtm}S
+0x1400182be type=0 len=6 refs=
+    )>6{1n
+0x1400182ca type=0 len=7 refs=
+    r	Vr.>T
+0x1400182dc type=0 len=6 refs=
+    +f)>0'
+0x14001832b type=0 len=5 refs=
+    Lj[;>
+0x14001834e type=0 len=5 refs=
+    3>fvw
+0x14001835c type=0 len=6 refs=
+    ;H9>&X
+0x140018382 type=0 len=7 refs=
+    *StO9>T
+0x1400183ae type=0 len=5 refs=
+    .>Tu
+
+0x1400183bd type=0 len=5 refs=
+    p>%@
+0x1400183cc type=0 len=6 refs=
+    n03>Pu
+0x1400184a2 type=0 len=7 refs=
+    K~Je#>!
+0x1400184db type=0 len=5 refs=
+    +M<7>
+0x140018521 type=0 len=9 refs=
+    
+"Ic(>\,
+0x14001857b type=0 len=7 refs=
+    bp(=>?g
+0x14001861e type=0 len=5 refs=
+    6>J`
+0x140018625 type=0 len=5 refs=
+    ?>!T
+0x14001862d type=0 len=6 refs=
+    4<>0A
+0x14001863c type=0 len=12 refs=
+    BC?>6t9^	c:>
+0x140018695 type=0 len=5 refs=
+    BF>^G
+0x1400186a5 type=0 len=6 refs=
+    K&>.yC
+0x1400186b3 type=0 len=6 refs=
+     'L>[
+0x1400186bc type=0 len=6 refs=
+    .xJ>Hf
+0x1400186c3 type=0 len=6 refs=
+    y\PD>!
+0x1400186d2 type=0 len=6 refs=
+    |b=})>
+0x1400186e3 type=0 len=7 refs=
+    c [1>H'
+0x140018722 type=0 len=6 refs=
+    uzKs@>
+0x14001873e type=0 len=6 refs=
+    3>N;kU
+0x14001876c type=0 len=7 refs=
+    	kE>fvw
+0x1400187ae type=0 len=5 refs=
+    A>pP&
+0x1400187b4 type=0 len=8 refs=
+    V6E>`"(5
+0x14001882c type=0 len=5 refs=
+    0iN>/
+0x14001883c type=0 len=5 refs=
+    +h->|
+0x14001884e type=0 len=5 refs=
+    @>%>b
+0x140018bdf type=0 len=5 refs=
+    ?d!Y
+0x140018c4f type=0 len=5 refs=
+    ?:kP<
+0x140018c5f type=0 len=7 refs=
+    ?UUUUUU
+0x140018ce7 type=0 len=5 refs=
+    ?f`Y4
+0x140018d17 type=0 len=5 refs=
+    ?QY^&
+0x140018f1f type=0 len=5 refs=
+    ?'u_
+0x140019047 type=0 len=6 refs=
+    ?7zQ6$
+0x140019070 type=0 len=5 refs=0x14000ffe4(_log10_special)
+    log10
+0x1400196e8 type=16777216 len=52 refs=
+    D:\Work\Defender\app\Service\x64\Release\Service.pdb
+0x140019740 type=0 len=8 refs=
+    .text$mn
+0x140019754 type=0 len=11 refs=
+    .text$mn$00
+0x140019768 type=0 len=7 refs=
+    .text$x
+0x140019778 type=0 len=8 refs=
+    .idata$5
+0x14001978c type=0 len=6 refs=
+    .00cfg
+0x14001979c type=0 len=8 refs=
+    .CRT$XCA
+0x1400197b0 type=0 len=9 refs=
+    .CRT$XCAA
+0x1400197c4 type=0 len=8 refs=
+    .CRT$XCZ
+0x1400197d8 type=0 len=8 refs=
+    .CRT$XIA
+0x1400197ec type=0 len=9 refs=
+    .CRT$XIAA
+0x140019800 type=0 len=9 refs=
+    .CRT$XIAC
+0x140019814 type=0 len=8 refs=
+    .CRT$XIC
+0x140019828 type=0 len=8 refs=
+    .CRT$XIZ
+0x14001983c type=0 len=8 refs=
+    .CRT$XPA
+0x140019850 type=0 len=8 refs=
+    .CRT$XPX
+0x140019864 type=0 len=9 refs=
+    .CRT$XPXA
+0x140019878 type=0 len=8 refs=
+    .CRT$XPZ
+0x14001988c type=0 len=8 refs=
+    .CRT$XTA
+0x1400198a0 type=0 len=8 refs=
+    .CRT$XTZ
+0x1400198b4 type=0 len=6 refs=
+    .rdata
+0x1400198c4 type=0 len=13 refs=
+    .rdata$zzzdbg
+0x1400198dc type=0 len=8 refs=
+    .rtc$IAA
+0x1400198f0 type=0 len=8 refs=
+    .rtc$IZZ
+0x140019904 type=0 len=8 refs=
+    .rtc$TAA
+0x140019918 type=0 len=8 refs=
+    .rtc$TZZ
+0x14001992c type=0 len=6 refs=
+    .xdata
+0x14001993c type=0 len=8 refs=
+    .idata$2
+0x140019950 type=0 len=8 refs=
+    .idata$3
+0x140019964 type=0 len=8 refs=
+    .idata$4
+0x140019978 type=0 len=8 refs=
+    .idata$6
+0x14001998c type=0 len=5 refs=
+    .data
+0x1400199ac type=0 len=6 refs=
+    .pdata
+0x1400199bc type=0 len=8 refs=
+    .rsrc$01
+0x1400199d0 type=0 len=8 refs=
+    .rsrc$02
+0x14001ab32 type=0 len=27 refs=
+    RegisterDeviceNotificationW
+0x14001ab4e type=0 len=10 refs=0x14001a784(?)
+    USER32.dll
+0x14001ab5c type=0 len=11 refs=
+    SHSetValueW
+0x14001ab6a type=0 len=12 refs=
+    SHDeleteKeyW
+0x14001ab7a type=0 len=11 refs=
+    SHGetValueW
+0x14001ab86 type=0 len=11 refs=0x14001a798(?)
+    SHLWAPI.dll
+0x14001ab94 type=0 len=28 refs=
+    InitializeSecurityDescriptor
+0x14001abb4 type=0 len=25 refs=
+    SetSecurityDescriptorDacl
+0x14001abd0 type=0 len=27 refs=
+    StartServiceCtrlDispatcherW
+0x14001abee type=0 len=14 refs=
+    OpenSCManagerW
+0x14001ac00 type=0 len=14 refs=
+    CreateServiceW
+0x14001ac12 type=0 len=18 refs=
+    CloseServiceHandle
+0x14001ac28 type=0 len=12 refs=
+    OpenServiceW
+0x14001ac38 type=0 len=14 refs=
+    ControlService
+0x14001ac4a type=0 len=13 refs=
+    DeleteService
+0x14001ac5a type=0 len=29 refs=
+    RegisterServiceCtrlHandlerExW
+0x14001ac7a type=0 len=16 refs=
+    SetServiceStatus
+0x14001ac8c type=0 len=12 refs=0x14001a7ac(?)
+    ADVAPI32.dll
+0x14001ac9c type=0 len=12 refs=
+    CreateEventW
+0x14001acac type=0 len=12 refs=
+    CreateThread
+0x14001acbc type=0 len=19 refs=
+    WaitForSingleObject
+0x14001acd2 type=0 len=11 refs=
+    CloseHandle
+0x14001ace0 type=0 len=18 refs=
+    GetModuleFileNameW
+0x14001acf6 type=0 len=11 refs=
+    CreateFileW
+0x14001ad04 type=0 len=15 refs=
+    DeviceIoControl
+0x14001ad16 type=0 len=12 refs=
+    GetLastError
+0x14001ad26 type=0 len=12 refs=
+    SetLastError
+0x14001ad36 type=0 len=13 refs=
+    GetDriveTypeW
+0x14001ad46 type=0 len=21 refs=
+    GetVolumeInformationW
+0x14001ad5e type=0 len=33 refs=
+    GetVolumeNameForVolumeMountPointW
+0x14001ad82 type=0 len=16 refs=
+    FindFirstVolumeW
+0x14001ad96 type=0 len=15 refs=
+    FindVolumeClose
+0x14001ada8 type=0 len=15 refs=
+    FindNextVolumeW
+0x14001adba type=0 len=16 refs=
+    RemoveDirectoryW
+0x14001adce type=0 len=14 refs=
+    FindFirstFileW
+0x14001ade0 type=0 len=18 refs=
+    SetFileAttributesW
+0x14001adf6 type=0 len=11 refs=
+    DeleteFileW
+0x14001ae04 type=0 len=13 refs=
+    FindNextFileW
+0x14001ae14 type=0 len=9 refs=
+    FindClose
+0x14001ae20 type=0 len=18 refs=
+    OutputDebugStringW
+0x14001ae36 type=0 len=17 refs=
+    SetThreadPriority
+0x14001ae4a type=0 len=16 refs=
+    GetCurrentThread
+0x14001ae5e type=0 len=12 refs=
+    SetErrorMode
+0x14001ae6e type=0 len=16 refs=
+    GetLogicalDrives
+0x14001ae82 type=0 len=14 refs=
+    CreateProcessW
+0x14001ae94 type=0 len=8 refs=
+    SetEvent
+0x14001aea0 type=0 len=12 refs=
+    GetTickCount
+0x14001aeb0 type=0 len=23 refs=
+    QueryPerformanceCounter
+0x14001aeca type=0 len=19 refs=
+    GetCurrentProcessId
+0x14001aee0 type=0 len=18 refs=
+    GetCurrentThreadId
+0x14001aef6 type=0 len=23 refs=
+    GetSystemTimeAsFileTime
+0x14001af10 type=0 len=19 refs=
+    InitializeSListHead
+0x14001af26 type=0 len=17 refs=
+    RtlCaptureContext
+0x14001af3a type=0 len=22 refs=
+    RtlLookupFunctionEntry
+0x14001af54 type=0 len=16 refs=
+    RtlVirtualUnwind
+0x14001af68 type=0 len=17 refs=
+    IsDebuggerPresent
+0x14001af7c type=0 len=24 refs=
+    UnhandledExceptionFilter
+0x14001af98 type=0 len=27 refs=
+    SetUnhandledExceptionFilter
+0x14001afb6 type=0 len=15 refs=
+    GetStartupInfoW
+0x14001afc8 type=0 len=25 refs=
+    IsProcessorFeaturePresent
+0x14001afe4 type=0 len=16 refs=
+    GetModuleHandleW
+0x14001aff8 type=0 len=17 refs=
+    GetCurrentProcess
+0x14001b00c type=0 len=16 refs=
+    TerminateProcess
+0x14001b01e type=0 len=12 refs=0x14001a7c0(?)
+    KERNEL32.dll
+0x14001b02e type=0 len=11 refs=
+    RtlUnwindEx
+0x14001b03c type=0 len=20 refs=
+    EnterCriticalSection
+0x14001b054 type=0 len=20 refs=
+    LeaveCriticalSection
+0x14001b06c type=0 len=21 refs=
+    DeleteCriticalSection
+0x14001b084 type=0 len=37 refs=
+    InitializeCriticalSectionAndSpinCount
+0x14001b0ac type=0 len=8 refs=
+    TlsAlloc
+0x14001b0b8 type=0 len=11 refs=
+    TlsGetValue
+0x14001b0c6 type=0 len=11 refs=
+    TlsSetValue
+0x14001b0d4 type=0 len=7 refs=
+    TlsFree
+0x14001b0de type=0 len=11 refs=
+    FreeLibrary
+0x14001b0ec type=0 len=14 refs=
+    GetProcAddress
+0x14001b0fe type=0 len=14 refs=
+    LoadLibraryExW
+0x14001b110 type=0 len=14 refs=
+    RaiseException
+0x14001b122 type=0 len=12 refs=
+    GetStdHandle
+0x14001b132 type=0 len=9 refs=
+    WriteFile
+0x14001b13e type=0 len=19 refs=
+    MultiByteToWideChar
+0x14001b154 type=0 len=19 refs=
+    WideCharToMultiByte
+0x14001b16a type=0 len=11 refs=
+    ExitProcess
+0x14001b178 type=0 len=18 refs=
+    GetModuleHandleExW
+0x14001b18e type=0 len=6 refs=
+    GetACP
+0x14001b198 type=0 len=8 refs=
+    HeapFree
+0x14001b1a4 type=0 len=9 refs=
+    HeapAlloc
+0x14001b1b0 type=0 len=11 refs=
+    GetFileType
+0x14001b1be type=0 len=12 refs=
+    LCMapStringW
+0x14001b1ce type=0 len=16 refs=
+    FindFirstFileExW
+0x14001b1e2 type=0 len=15 refs=
+    IsValidCodePage
+0x14001b1f4 type=0 len=8 refs=
+    GetOEMCP
+0x14001b200 type=0 len=9 refs=
+    GetCPInfo
+0x14001b20c type=0 len=15 refs=
+    GetCommandLineA
+0x14001b21e type=0 len=15 refs=
+    GetCommandLineW
+0x14001b230 type=0 len=22 refs=
+    GetEnvironmentStringsW
+0x14001b24a type=0 len=23 refs=
+    FreeEnvironmentStringsW
+0x14001b264 type=0 len=12 refs=
+    SetStdHandle
+0x14001b274 type=0 len=14 refs=
+    GetStringTypeW
+0x14001b286 type=0 len=14 refs=
+    GetProcessHeap
+0x14001b298 type=0 len=16 refs=
+    FlushFileBuffers
+0x14001b2ac type=0 len=12 refs=
+    GetConsoleCP
+0x14001b2bc type=0 len=14 refs=
+    GetConsoleMode
+0x14001b2ce type=0 len=8 refs=
+    HeapSize
+0x14001b2da type=0 len=11 refs=
+    HeapReAlloc
+0x14001b2e8 type=0 len=16 refs=
+    SetFilePointerEx
+0x14001b2fc type=0 len=13 refs=
+    WriteConsoleW
+0x14001c34a type=0 len=26 refs=
+                              
+0x14001c42a type=0 len=26 refs=
+    abcdefghijklmnopqrstuvwxyz
+0x14001c44a type=0 len=26 refs=
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0x14001c662 type=0 len=26 refs=
+                              
+0x14001c751 type=0 len=26 refs=
+    abcdefghijklmnopqrstuvwxyz
+0x14001c771 type=0 len=26 refs=
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ

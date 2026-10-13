@@ -1,0 +1,5 @@
+input=D:\workSpace\ShadowDefender-Pro\samples\Defender.exe
+idb=D:\workSpace\ShadowDefender-Pro\samples\Defender.exe.i64
+imagebase=0x140000000
+proc=metapc
+bits=64

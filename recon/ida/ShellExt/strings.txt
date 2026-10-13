@@ -1,0 +1,836 @@
+0x180000240 type=0 len=5 refs=0x180025774(?)
+    .text
+0x180000268 type=0 len=6 refs=
+    .rdata
+0x180000290 type=0 len=5 refs=
+    .data
+0x1800002b8 type=0 len=6 refs=
+    .pdata
+0x1800002e0 type=0 len=5 refs=
+    .rsrc
+0x180000308 type=0 len=6 refs=
+    .reloc
+0x18001a598 type=0 len=21 refs=0x1800036e0(sub_180003690)
+    RegOpenKeyTransactedW
+0x18001a5b0 type=0 len=23 refs=0x180004d72(sub_180004400)
+    RegCreateKeyTransactedW
+0x18001a5c8 type=0 len=23 refs=0x1800031bd(sub_180003180)
+    RegDeleteKeyTransactedW
+0x18001a5e0 type=0 len=15 refs=0x180003250(sub_180003180)
+    RegDeleteKeyExW
+0x18001ab83 type=0 len=5 refs=
+    ^S((M
+0x18001b180 type=0 len=15 refs=0x180005724(?_Xlen@?$vector@PEAXV?$allocator@PEAX@std@@@std@@IEBAXXZ)
+    string too long
+0x18001b2a8 type=0 len=16 refs=0x1800016c8(sub_180001440)
+    list<T> too long
+0x18001b680 type=0 len=24 refs=0x1800065ac(sub_180006490)
+    UnRegisterTypeLibForUser
+0x18001b6a0 type=0 len=22 refs=0x180006ed9(sub_180006D70)
+    RegisterTypeLibForUser
+0x18001b728 type=0 len=24 refs=
+    NtQueryInformationThread
+0x18001b76b type=0 len=5 refs=
+    ^S((M
+0x18001b890 type=0 len=17 refs=0x1800076b9(?get_unexpected_or_default@@YAP6AXXZQEBU__vcrt_ptd@@@Z)
+    Unknown exception
+0x18001b8c0 type=0 len=14 refs=0x180007519(sub_180007514)
+    bad allocation
+0x18001b968 type=0 len=20 refs=0x180008345(sub_180008340)
+    bad array new length
+0x18001b980 type=0 len=11 refs=0x180027484(?)
+    UxTheme.dll
+0x18001b9c0 type=0 len=15 refs=0x180008906(sub_180008890),0x180008c46(sub_180008BC0)
+    DeviceIoControl
+0x18001bb50 type=0 len=13 refs=0x18000b365(sub_18000B360)
+    bad exception
+0x18001bc38 type=0 len=8 refs=0x18000bc09(__vcrt_FlsAlloc),0x18000bc19(__vcrt_FlsAlloc)
+    FlsAlloc
+0x18001bc50 type=0 len=7 refs=0x18000bc50(__vcrt_FlsFree),0x18000bc63(__vcrt_FlsFree)
+    FlsFree
+0x18001bc60 type=0 len=11 refs=0x18000bc98(__vcrt_FlsGetValue),0x18000bcab(__vcrt_FlsGetValue)
+    FlsGetValue
+0x18001bc78 type=0 len=11 refs=0x18000bce5(__vcrt_FlsSetValue),0x18000bcee(__vcrt_FlsSetValue)
+    FlsSetValue
+0x18001bc90 type=0 len=27 refs=0x18000bd3e(__vcrt_InitializeCriticalSectionEx),0x18000bd51(__vcrt_InitializeCriticalSectionEx)
+    InitializeCriticalSectionEx
+0x18001bff8 type=0 len=8 refs=0x18001bcc0(?)
+    __based(
+0x18001c008 type=0 len=7 refs=0x18001bcc8(?)
+    __cdecl
+0x18001c010 type=0 len=8 refs=0x18001bcd0(?)
+    __pascal
+0x18001c020 type=0 len=9 refs=0x18001bcd8(?)
+    __stdcall
+0x18001c030 type=0 len=10 refs=0x18001bce0(?)
+    __thiscall
+0x18001c040 type=0 len=10 refs=0x18001bce8(?)
+    __fastcall
+0x18001c050 type=0 len=12 refs=0x18001bcf0(?)
+    __vectorcall
+0x18001c060 type=0 len=9 refs=0x18001bcf8(?)
+    __clrcall
+0x18001c06c type=0 len=6 refs=0x18001bd00(?)
+    __eabi
+0x18001c078 type=0 len=9 refs=0x18001bd08(?)
+    __swift_1
+0x18001c088 type=0 len=9 refs=0x18001bd10(?)
+    __swift_2
+0x18001c098 type=0 len=7 refs=0x18001bd18(?)
+    __ptr64
+0x18001c0a0 type=0 len=10 refs=0x18001bd20(?)
+    __restrict
+0x18001c0b0 type=0 len=11 refs=0x18001bd28(?)
+    __unaligned
+0x18001c0c0 type=0 len=9 refs=0x18001bd30(?)
+    restrict(
+0x18001c0d8 type=0 len=7 refs=0x18001bd48(?)
+     delete
+0x18001c100 type=0 len=8 refs=0x18001bd88(?)
+    operator
+0x18001c188 type=0 len=9 refs=0x18001be88(?)
+    `vftable'
+0x18001c198 type=0 len=9 refs=0x18001be90(?)
+    `vbtable'
+0x18001c1a8 type=0 len=7 refs=0x18001be98(?)
+    `vcall'
+0x18001c1b0 type=0 len=8 refs=0x18001bea0(?)
+    `typeof'
+0x18001c1c0 type=0 len=20 refs=0x18001bea8(?)
+    `local static guard'
+0x18001c1d8 type=0 len=8 refs=0x18001beb0(?)
+    `string'
+0x18001c1e8 type=0 len=18 refs=0x18001beb8(?)
+    `vbase destructor'
+0x18001c200 type=0 len=28 refs=0x18001bec0(?)
+    `vector deleting destructor'
+0x18001c220 type=0 len=29 refs=0x18001bec8(?)
+    `default constructor closure'
+0x18001c240 type=0 len=28 refs=0x18001bed0(?)
+    `scalar deleting destructor'
+0x18001c260 type=0 len=29 refs=0x18001bed8(?)
+    `vector constructor iterator'
+0x18001c280 type=0 len=28 refs=0x18001bee0(?)
+    `vector destructor iterator'
+0x18001c2a0 type=0 len=35 refs=0x18001bee8(?)
+    `vector vbase constructor iterator'
+0x18001c2c8 type=0 len=26 refs=0x18001bef0(?)
+    `virtual displacement map'
+0x18001c2e8 type=0 len=32 refs=0x18001bef8(?)
+    `eh vector constructor iterator'
+0x18001c310 type=0 len=31 refs=0x18001bf00(?)
+    `eh vector destructor iterator'
+0x18001c330 type=0 len=38 refs=0x18001bf08(?)
+    `eh vector vbase constructor iterator'
+0x18001c358 type=0 len=26 refs=0x18001bf10(?)
+    `copy constructor closure'
+0x18001c378 type=0 len=15 refs=0x18001bf18(?)
+    `udt returning'
+0x18001c38c type=0 len=5 refs=0x18001bf28(?)
+    `RTTI
+0x18001c398 type=0 len=15 refs=0x18001bf30(?)
+    `local vftable'
+0x18001c3a8 type=0 len=35 refs=0x18001bf38(?)
+    `local vftable constructor closure'
+0x18001c3cc type=0 len=6 refs=0x18001bf40(?)
+     new[]
+0x18001c3d8 type=0 len=9 refs=0x18001bf48(?)
+     delete[]
+0x18001c3e8 type=0 len=14 refs=0x18001bf50(?)
+    `omni callsig'
+0x18001c3f8 type=0 len=26 refs=0x18001bf58(?)
+    `placement delete closure'
+0x18001c418 type=0 len=28 refs=0x18001bf60(?)
+    `placement delete[] closure'
+0x18001c438 type=0 len=37 refs=0x18001bf68(?)
+    `managed vector constructor iterator'
+0x18001c460 type=0 len=36 refs=0x18001bf70(?)
+    `managed vector destructor iterator'
+0x18001c488 type=0 len=37 refs=0x18001bf78(?)
+    `eh vector copy constructor iterator'
+0x18001c4b0 type=0 len=43 refs=0x18001bf80(?)
+    `eh vector vbase copy constructor iterator'
+0x18001c4e0 type=0 len=26 refs=0x18001bf88(?)
+    `dynamic initializer for '
+0x18001c500 type=0 len=32 refs=0x18001bf90(?)
+    `dynamic atexit destructor for '
+0x18001c528 type=0 len=34 refs=0x18001bf98(?)
+    `vector copy constructor iterator'
+0x18001c550 type=0 len=40 refs=0x18001bfa0(?)
+    `vector vbase copy constructor iterator'
+0x18001c580 type=0 len=42 refs=0x18001bfa8(?)
+    `managed vector copy constructor iterator'
+0x18001c5b0 type=0 len=27 refs=0x18001bfb0(?)
+    `local static thread guard'
+0x18001c5d0 type=0 len=12 refs=0x18001bfb8(?)
+    operator "" 
+0x18001c5e0 type=0 len=17 refs=0x18001bfc0(?)
+    operator co_await
+0x18001c5f8 type=0 len=17 refs=0x18001bfd0(?)
+     Type Descriptor'
+0x18001c610 type=0 len=27 refs=0x18001bfd8(?)
+     Base Class Descriptor at (
+0x18001c630 type=0 len=18 refs=0x18001bfe0(?)
+     Base Class Array'
+0x18001c648 type=0 len=28 refs=0x18001bfe8(?)
+     Class Hierarchy Descriptor'
+0x18001c668 type=0 len=25 refs=0x18001bff0(?)
+     Complete Object Locator'
+0x18001c825 type=0 len=5 refs=
+    ('8PW
+0x18001c82e type=0 len=5 refs=
+    700PP
+0x18001c840 type=0 len=17 refs=
+    `h`hhhxwpwpp
+0x18001c85c type=0 len=6 refs=0x18000d374(unknown_libname_48),0x18000d971(unknown_libname_52)
+    (null)
+0x18001c970 type=0 len=14 refs=0x18000e067(?try_cor_exit_process@@YAXI@Z)
+    CorExitProcess
+0x18001ca80 type=0 len=9 refs=0x180010d85(?fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z)
+    NAN(SNAN)
+0x18001ca90 type=0 len=9 refs=0x180010d90(?fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z)
+    nan(snan)
+0x18001caa0 type=0 len=8 refs=0x180010d9b(?fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z)
+    NAN(IND)
+0x18001cab0 type=0 len=8 refs=0x180010da6(?fp_format_nan_or_infinity@@YAHW4__acrt_fp_class@@_NPEAD_K1@Z)
+    nan(ind)
+0x18001cabc type=0 len=5 refs=0x18001097f(?fp_format_e_internal@@YAHQEAD_KH_NIQEAU_strflt@@2QEAU__crt_locale_pointers@@@Z)
+    e+000
+0x18001cdac type=0 len=6 refs=0x18001cb08(?)
+    Sunday
+0x18001cdb4 type=0 len=6 refs=0x18001cb10(?)
+    Monday
+0x18001cdc0 type=0 len=7 refs=0x18001cb18(?)
+    Tuesday
+0x18001cdc8 type=0 len=9 refs=0x18001cb20(?)
+    Wednesday
+0x18001cdd8 type=0 len=8 refs=0x18001cb28(?)
+    Thursday
+0x18001cde4 type=0 len=6 refs=0x18001cb30(?)
+    Friday
+0x18001cdf0 type=0 len=8 refs=0x18001cb38(?)
+    Saturday
+0x18001ce30 type=0 len=7 refs=0x18001cba0(?)
+    January
+0x18001ce38 type=0 len=8 refs=0x18001cba8(?)
+    February
+0x18001ce44 type=0 len=5 refs=0x18001cbb0(?)
+    March
+0x18001ce4c type=0 len=5 refs=0x18001cbb8(?)
+    April
+0x18001ce64 type=0 len=6 refs=0x18001cbd8(?)
+    August
+0x18001ce70 type=0 len=9 refs=0x18001cbe0(?)
+    September
+0x18001ce80 type=0 len=7 refs=0x18001cbe8(?)
+    October
+0x18001ce88 type=0 len=8 refs=0x18001cbf0(?)
+    November
+0x18001ce98 type=0 len=8 refs=0x18001cbf8(?)
+    December
+0x18001ceb0 type=0 len=8 refs=0x18001cc10(?)
+    MM/dd/yy
+0x18001cec0 type=0 len=19 refs=0x18001cc18(?)
+    dddd, MMMM dd, yyyy
+0x18001ced8 type=0 len=8 refs=0x18001cc20(?)
+    HH:mm:ss
+0x18001d738 type=0 len=8 refs=0x180011741(__acrt_FlsAlloc),0x180011754(__acrt_FlsAlloc)
+    FlsAlloc
+0x18001d750 type=0 len=7 refs=0x180011798(__acrt_FlsFree),0x1800117ab(__acrt_FlsFree)
+    FlsFree
+0x18001d760 type=0 len=11 refs=0x1800117f0(__vcrt_FlsFree_0),0x180011803(__vcrt_FlsFree_0)
+    FlsGetValue
+0x18001d778 type=0 len=11 refs=0x18001184e(__acrt_FlsSetValue),0x180011857(__acrt_FlsSetValue)
+    FlsSetValue
+0x18001d790 type=0 len=19 refs=0x180011aca(__acrt_is_packaged_app),0x180011add(__acrt_is_packaged_app)
+    GetCurrentPackageId
+0x18001d7b0 type=0 len=27 refs=0x1800118bb(__acrt_InitializeCriticalSectionEx),0x1800118ce(__acrt_InitializeCriticalSectionEx)
+    InitializeCriticalSectionEx
+0x18001d7d8 type=0 len=13 refs=0x18001193d(__acrt_LCMapStringEx),0x18001194e(__acrt_LCMapStringEx)
+    LCMapStringEx
+0x18001d7f0 type=0 len=16 refs=0x180011a1d(__acrt_LocaleNameToLCID),0x180011a27(__acrt_LocaleNameToLCID)
+    LocaleNameToLCID
+0x18001dbf7 type=0 len=5 refs=
+    	
+
+0x18001dc10 type=0 len=95 refs=
+     !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+0x18001dd77 type=0 len=5 refs=
+    	
+
+0x18001dd90 type=0 len=95 refs=
+     !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+0x18001e1cc type=0 len=7 refs=
+    [aOni*{
+0x18001e2a3 type=0 len=5 refs=
+    eLK(w
+0x18001e30f type=0 len=5 refs=
+    FEMh
+0x18001e3ad type=0 len=6 refs=
+    ~ $s%r
+0x18001e3bb type=0 len=7 refs=
+    @b;zO]
+0x18001e4d4 type=0 len=5 refs=
+    iu+-,
+0x18001e545 type=0 len=5 refs=
+    obwQ4
+0x18001e797 type=0 len=6 refs=
+    v2!L.2
+0x18001e91a type=0 len=5 refs=
+    ^<V7w
+0x18001ea50 type=0 len=5 refs=0x180015ca7(__acrt_fltout)
+    1#INF
+0x18001ea58 type=0 len=6 refs=0x180015c88(__acrt_fltout)
+    1#QNAN
+0x18001ea60 type=0 len=6 refs=0x180015c69(__acrt_fltout)
+    1#SNAN
+0x18001ea68 type=0 len=5 refs=0x180015c4a(__acrt_fltout)
+    1#IND
+0x1800227ff type=0 len=6 refs=
+    =imb;D
+0x180022969 type=0 len=8 refs=
+    1<.	/>:
+0x1800229ae type=0 len=6 refs=
+    />58d%
+0x1800229e6 type=0 len=5 refs=
+    !>6'Y
+0x1800229f7 type=0 len=6 refs=
+    >jtm}S
+0x180022a4e type=0 len=6 refs=
+    )>6{1n
+0x180022a5a type=0 len=7 refs=
+    r	Vr.>T
+0x180022a6c type=0 len=6 refs=
+    +f)>0'
+0x180022abb type=0 len=5 refs=
+    Lj[;>
+0x180022ade type=0 len=5 refs=
+    3>fvw
+0x180022aec type=0 len=6 refs=
+    ;H9>&X
+0x180022b12 type=0 len=7 refs=
+    *StO9>T
+0x180022b3e type=0 len=5 refs=
+    .>Tu
+
+0x180022b4d type=0 len=5 refs=
+    p>%@
+0x180022b5c type=0 len=6 refs=
+    n03>Pu
+0x180022c32 type=0 len=7 refs=
+    K~Je#>!
+0x180022c6b type=0 len=5 refs=
+    +M<7>
+0x180022cb1 type=0 len=9 refs=
+    
+"Ic(>\,
+0x180022d0b type=0 len=7 refs=
+    bp(=>?g
+0x180022dae type=0 len=5 refs=
+    6>J`
+0x180022db5 type=0 len=5 refs=
+    ?>!T
+0x180022dbd type=0 len=6 refs=
+    4<>0A
+0x180022dcc type=0 len=12 refs=
+    BC?>6t9^	c:>
+0x180022e25 type=0 len=5 refs=
+    BF>^G
+0x180022e35 type=0 len=6 refs=
+    K&>.yC
+0x180022e43 type=0 len=6 refs=
+     'L>[
+0x180022e4c type=0 len=6 refs=
+    .xJ>Hf
+0x180022e53 type=0 len=6 refs=
+    y\PD>!
+0x180022e62 type=0 len=6 refs=
+    |b=})>
+0x180022e73 type=0 len=7 refs=
+    c [1>H'
+0x180022eb2 type=0 len=6 refs=
+    uzKs@>
+0x180022ece type=0 len=6 refs=
+    3>N;kU
+0x180022efc type=0 len=7 refs=
+    	kE>fvw
+0x180022f3e type=0 len=5 refs=
+    A>pP&
+0x180022f44 type=0 len=8 refs=
+    V6E>`"(5
+0x180022fbc type=0 len=5 refs=
+    0iN>/
+0x180022fcc type=0 len=5 refs=
+    +h->|
+0x180022fde type=0 len=5 refs=
+    @>%>b
+0x18002336f type=0 len=5 refs=
+    ?d!Y
+0x1800233df type=0 len=5 refs=
+    ?:kP<
+0x1800233ef type=0 len=7 refs=
+    ?UUUUUU
+0x180023477 type=0 len=5 refs=
+    ?f`Y4
+0x1800234a7 type=0 len=5 refs=
+    ?QY^&
+0x1800236af type=0 len=5 refs=
+    ?'u_
+0x1800237d7 type=0 len=6 refs=
+    ?7zQ6$
+0x180023800 type=0 len=5 refs=0x180018394(_log10_special)
+    log10
+0x180023850 type=0 len=23 refs=0x180018a2a(sub_1800189F0)
+    AcquireSRWLockExclusive
+0x180023868 type=0 len=23 refs=0x180018a3f(sub_1800189F0)
+    ReleaseSRWLockExclusive
+0x18002489c type=16777216 len=54 refs=
+    D:\Work\Defender\app\ShellExt\x64\Release\ShellExt.pdb
+0x1800248f4 type=0 len=8 refs=
+    .text$di
+0x180024908 type=0 len=8 refs=
+    .text$mn
+0x18002491c type=0 len=11 refs=
+    .text$mn$00
+0x180024930 type=0 len=7 refs=
+    .text$x
+0x180024940 type=0 len=8 refs=
+    .text$yd
+0x180024954 type=0 len=8 refs=
+    .idata$5
+0x180024968 type=0 len=6 refs=
+    .00cfg
+0x180024978 type=0 len=8 refs=
+    .CRT$XCA
+0x18002498c type=0 len=8 refs=
+    .CRT$XCL
+0x1800249a0 type=0 len=8 refs=
+    .CRT$XCU
+0x1800249b4 type=0 len=8 refs=
+    .CRT$XCZ
+0x1800249c8 type=0 len=8 refs=
+    .CRT$XIA
+0x1800249dc type=0 len=8 refs=
+    .CRT$XIC
+0x1800249f0 type=0 len=8 refs=
+    .CRT$XIZ
+0x180024a04 type=0 len=8 refs=
+    .CRT$XPA
+0x180024a18 type=0 len=8 refs=
+    .CRT$XPX
+0x180024a2c type=0 len=9 refs=
+    .CRT$XPXA
+0x180024a40 type=0 len=8 refs=
+    .CRT$XPZ
+0x180024a54 type=0 len=8 refs=
+    .CRT$XTA
+0x180024a68 type=0 len=8 refs=
+    .CRT$XTZ
+0x180024a7c type=0 len=6 refs=
+    .rdata
+0x180024a8c type=0 len=8 refs=
+    .rdata$r
+0x180024aa0 type=0 len=13 refs=
+    .rdata$zzzdbg
+0x180024ab8 type=0 len=8 refs=
+    .rtc$IAA
+0x180024acc type=0 len=8 refs=
+    .rtc$IZZ
+0x180024ae0 type=0 len=8 refs=
+    .rtc$TAA
+0x180024af4 type=0 len=8 refs=
+    .rtc$TZZ
+0x180024b08 type=0 len=6 refs=
+    .xdata
+0x180024b18 type=0 len=8 refs=
+    .xdata$x
+0x180024b2c type=0 len=7 refs=
+    ATL$__a
+0x180024b3c type=0 len=7 refs=
+    ATL$__m
+0x180024b4c type=0 len=7 refs=
+    ATL$__z
+0x180024b5c type=0 len=8 refs=
+    .didat$2
+0x180024b70 type=0 len=8 refs=
+    .didat$3
+0x180024b84 type=0 len=8 refs=
+    .didat$4
+0x180024b98 type=0 len=8 refs=
+    .didat$6
+0x180024bac type=0 len=8 refs=
+    .didat$7
+0x180024bc0 type=0 len=6 refs=
+    .edata
+0x180024bd0 type=0 len=8 refs=
+    .idata$2
+0x180024be4 type=0 len=8 refs=
+    .idata$3
+0x180024bf8 type=0 len=8 refs=
+    .idata$4
+0x180024c0c type=0 len=8 refs=
+    .idata$6
+0x180024c20 type=0 len=5 refs=
+    .data
+0x180024c30 type=0 len=7 refs=
+    .data$r
+0x180024c40 type=0 len=8 refs=
+    .didat$5
+0x180024c64 type=0 len=6 refs=
+    .pdata
+0x180024c74 type=0 len=8 refs=
+    .rsrc$01
+0x180024c88 type=0 len=8 refs=
+    .rsrc$02
+0x1800274e2 type=0 len=18 refs=
+    BeginBufferedPaint
+0x1800274f8 type=0 len=16 refs=
+    EndBufferedPaint
+0x18002750c type=0 len=20 refs=
+    GetBufferedPaintBits
+0x1800275aa type=0 len=12 refs=0x18002755c(?)
+    ShellExt.DLL
+0x1800275b7 type=0 len=15 refs=0x18002758c(?)
+    DllCanUnloadNow
+0x1800275c7 type=0 len=17 refs=0x18002758c(?)
+    DllGetClassObject
+0x1800275d9 type=0 len=17 refs=0x18002758c(?)
+    DllRegisterServer
+0x1800275eb type=0 len=19 refs=0x18002758c(?)
+    DllUnregisterServer
+0x1800275ff type=0 len=11 refs=0x18002758c(?)
+    SetWorkMode
+0x180027b4a type=0 len=18 refs=
+    GetFileAttributesW
+0x180027b60 type=0 len=14 refs=
+    RaiseException
+0x180027b72 type=0 len=12 refs=
+    GetLastError
+0x180027b82 type=0 len=37 refs=
+    InitializeCriticalSectionAndSpinCount
+0x180027baa type=0 len=21 refs=
+    DeleteCriticalSection
+0x180027bc2 type=0 len=13 refs=
+    GetVersionExW
+0x180027bd2 type=0 len=11 refs=
+    FreeLibrary
+0x180027be0 type=0 len=18 refs=
+    GetModuleFileNameW
+0x180027bf6 type=0 len=16 refs=
+    GetModuleHandleW
+0x180027c0a type=0 len=14 refs=
+    GetProcAddress
+0x180027c1c type=0 len=14 refs=
+    LoadLibraryExW
+0x180027c2e type=0 len=12 refs=
+    LoadResource
+0x180027c3e type=0 len=14 refs=
+    SizeofResource
+0x180027c50 type=0 len=10 refs=
+    GlobalLock
+0x180027c5e type=0 len=12 refs=
+    GlobalUnlock
+0x180027c6e type=0 len=9 refs=
+    lstrcmpiW
+0x180027c7a type=0 len=9 refs=
+    lstrcpynA
+0x180027c86 type=0 len=9 refs=
+    lstrcpynW
+0x180027c92 type=0 len=13 refs=
+    FindResourceW
+0x180027ca2 type=0 len=21 refs=
+    GetPrivateProfileIntW
+0x180027cba type=0 len=24 refs=
+    GetPrivateProfileStringW
+0x180027cd6 type=0 len=19 refs=
+    MultiByteToWideChar
+0x180027cec type=0 len=19 refs=
+    WideCharToMultiByte
+0x180027d02 type=0 len=9 refs=
+    HeapAlloc
+0x180027d0e type=0 len=8 refs=
+    HeapFree
+0x180027d1a type=0 len=14 refs=
+    GetProcessHeap
+0x180027d2c type=0 len=13 refs=
+    EncodePointer
+0x180027d3c type=0 len=13 refs=
+    DecodePointer
+0x180027d4c type=0 len=20 refs=
+    EnterCriticalSection
+0x180027d64 type=0 len=20 refs=
+    LeaveCriticalSection
+0x180027d7c type=0 len=11 refs=
+    ExitProcess
+0x180027d8a type=0 len=16 refs=
+    GetCurrentThread
+0x180027d9e type=0 len=12 refs=
+    LoadLibraryA
+0x180027dae type=0 len=12 refs=
+    LoadLibraryW
+0x180027dbe type=0 len=15 refs=
+    GetThreadLocale
+0x180027dd0 type=0 len=15 refs=
+    SetThreadLocale
+0x180027de0 type=0 len=12 refs=0x180027618(?)
+    KERNEL32.dll
+0x180027df0 type=0 len=9 refs=
+    CharNextW
+0x180027dfc type=0 len=11 refs=
+    InsertMenuW
+0x180027e0a type=0 len=18 refs=
+    SetMenuItemBitmaps
+0x180027e20 type=0 len=11 refs=
+    DestroyIcon
+0x180027e2e type=0 len=10 refs=
+    LoadImageW
+0x180027e3c type=0 len=16 refs=
+    GetSystemMetrics
+0x180027e50 type=0 len=7 refs=
+    SetRect
+0x180027e5a type=0 len=10 refs=
+    DrawIconEx
+0x180027e68 type=0 len=11 refs=
+    GetIconInfo
+0x180027e74 type=0 len=10 refs=0x18002762c(?)
+    USER32.dll
+0x180027e82 type=0 len=18 refs=
+    CreateCompatibleDC
+0x180027e98 type=0 len=8 refs=
+    DeleteDC
+0x180027ea4 type=0 len=12 refs=
+    DeleteObject
+0x180027eb4 type=0 len=9 refs=
+    GetDIBits
+0x180027ec0 type=0 len=12 refs=
+    SelectObject
+0x180027ed0 type=0 len=16 refs=
+    CreateDIBSection
+0x180027ee2 type=0 len=9 refs=0x180027640(?)
+    GDI32.dll
+0x180027eee type=0 len=11 refs=
+    RegCloseKey
+0x180027efc type=0 len=15 refs=
+    RegCreateKeyExW
+0x180027f0e type=0 len=13 refs=
+    RegDeleteKeyW
+0x180027f1e type=0 len=15 refs=
+    RegDeleteValueW
+0x180027f30 type=0 len=13 refs=
+    RegEnumKeyExW
+0x180027f40 type=0 len=13 refs=
+    RegOpenKeyExW
+0x180027f50 type=0 len=16 refs=
+    RegQueryInfoKeyW
+0x180027f64 type=0 len=14 refs=
+    RegSetValueExW
+0x180027f74 type=0 len=12 refs=0x180027654(?)
+    ADVAPI32.dll
+0x180027f84 type=0 len=14 refs=
+    DragQueryFileW
+0x180027f96 type=0 len=13 refs=
+    ShellExecuteW
+0x180027fa4 type=0 len=11 refs=0x180027668(?)
+    SHELL32.dll
+0x180027fb2 type=0 len=14 refs=
+    CoTaskMemAlloc
+0x180027fc4 type=0 len=16 refs=
+    CoTaskMemRealloc
+0x180027fd8 type=0 len=13 refs=
+    CoTaskMemFree
+0x180027fe8 type=0 len=16 refs=
+    ReleaseStgMedium
+0x180027ffc type=0 len=16 refs=
+    CoCreateInstance
+0x180028010 type=0 len=15 refs=
+    StringFromGUID2
+0x180028020 type=0 len=9 refs=0x18002767c(?)
+    ole32.dll
+0x18002802a type=0 len=12 refs=0x180027690(?)
+    OLEAUT32.dll
+0x18002803a type=0 len=11 refs=
+    SHGetValueW
+0x180028046 type=0 len=11 refs=0x1800276a4(?)
+    SHLWAPI.dll
+0x18002806a type=0 len=17 refs=
+    IsDebuggerPresent
+0x18002807e type=0 len=18 refs=
+    OutputDebugStringW
+0x180028094 type=0 len=17 refs=
+    RtlCaptureContext
+0x1800280a8 type=0 len=22 refs=
+    RtlLookupFunctionEntry
+0x1800280c2 type=0 len=16 refs=
+    RtlVirtualUnwind
+0x1800280d6 type=0 len=24 refs=
+    UnhandledExceptionFilter
+0x1800280f2 type=0 len=27 refs=
+    SetUnhandledExceptionFilter
+0x180028110 type=0 len=17 refs=
+    GetCurrentProcess
+0x180028124 type=0 len=16 refs=
+    TerminateProcess
+0x180028138 type=0 len=25 refs=
+    IsProcessorFeaturePresent
+0x180028154 type=0 len=15 refs=
+    GetStartupInfoW
+0x180028166 type=0 len=23 refs=
+    QueryPerformanceCounter
+0x180028180 type=0 len=19 refs=
+    GetCurrentProcessId
+0x180028196 type=0 len=18 refs=
+    GetCurrentThreadId
+0x1800281ac type=0 len=23 refs=
+    GetSystemTimeAsFileTime
+0x1800281c6 type=0 len=19 refs=
+    InitializeSListHead
+0x1800281dc type=0 len=11 refs=
+    CreateFileW
+0x1800281ea type=0 len=16 refs=
+    SetFilePointerEx
+0x1800281fe type=0 len=9 refs=
+    WriteFile
+0x18002820a type=0 len=11 refs=
+    CloseHandle
+0x180028218 type=0 len=12 refs=
+    SetLastError
+0x180028228 type=0 len=17 refs=
+    RtlPcToFileHeader
+0x18002823c type=0 len=11 refs=
+    RtlUnwindEx
+0x18002824a type=0 len=21 refs=
+    InterlockedFlushSList
+0x180028262 type=0 len=8 refs=
+    TlsAlloc
+0x18002826e type=0 len=11 refs=
+    TlsGetValue
+0x18002827c type=0 len=11 refs=
+    TlsSetValue
+0x18002828a type=0 len=7 refs=
+    TlsFree
+0x180028294 type=0 len=18 refs=
+    GetModuleHandleExW
+0x1800282aa type=0 len=18 refs=
+    GetModuleFileNameA
+0x1800282c0 type=0 len=8 refs=
+    HeapSize
+0x1800282cc type=0 len=11 refs=
+    HeapReAlloc
+0x1800282da type=0 len=6 refs=
+    GetACP
+0x1800282e4 type=0 len=12 refs=
+    GetStdHandle
+0x1800282f4 type=0 len=11 refs=
+    GetFileType
+0x180028302 type=0 len=12 refs=
+    LCMapStringW
+0x180028312 type=0 len=9 refs=
+    FindClose
+0x18002831e type=0 len=16 refs=
+    FindFirstFileExA
+0x180028332 type=0 len=13 refs=
+    FindNextFileA
+0x180028342 type=0 len=15 refs=
+    IsValidCodePage
+0x180028354 type=0 len=8 refs=
+    GetOEMCP
+0x180028360 type=0 len=9 refs=
+    GetCPInfo
+0x18002836c type=0 len=15 refs=
+    GetCommandLineA
+0x18002837e type=0 len=15 refs=
+    GetCommandLineW
+0x180028390 type=0 len=22 refs=
+    GetEnvironmentStringsW
+0x1800283aa type=0 len=23 refs=
+    FreeEnvironmentStringsW
+0x1800283c4 type=0 len=12 refs=
+    SetStdHandle
+0x1800283d4 type=0 len=14 refs=
+    GetStringTypeW
+0x1800283e6 type=0 len=16 refs=
+    FlushFileBuffers
+0x1800283fa type=0 len=12 refs=
+    GetConsoleCP
+0x18002840a type=0 len=14 refs=
+    GetConsoleMode
+0x18002841c type=0 len=13 refs=
+    WriteConsoleW
+0x18002842c type=0 len=13 refs=
+    GetSystemInfo
+0x18002843c type=0 len=14 refs=
+    VirtualProtect
+0x18002844e type=0 len=12 refs=
+    VirtualQuery
+0x18002845e type=0 len=14 refs=
+    LoadLibraryExA
+0x1800295ba type=0 len=26 refs=
+                              
+0x18002969a type=0 len=26 refs=
+    abcdefghijklmnopqrstuvwxyz
+0x1800296ba type=0 len=26 refs=
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0x1800298d2 type=0 len=26 refs=
+                              
+0x1800299c1 type=0 len=26 refs=
+    abcdefghijklmnopqrstuvwxyz
+0x1800299e1 type=0 len=26 refs=
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0x180029b70 type=0 len=52 refs=
+    .?AV?$CComObjectCached@VCComClassFactory@ATL@@@ATL@@
+0x180029bb8 type=0 len=18 refs=
+    .?AUIContextMenu@@
+0x180029be0 type=0 len=19 refs=
+    .?AUIShellExtInit@@
+0x180029c08 type=0 len=21 refs=
+    .?AUIContextMenuExt@@
+0x180029c30 type=0 len=21 refs=
+    .?AVCContextMenuExt@@
+0x180029c60 type=0 len=57 refs=
+    .?AV?$CComObjectRootEx@VCComSingleThreadModel@ATL@@@ATL@@
+0x180029cb0 type=0 len=77 refs=
+    .?AV?$CComCoClass@VCContextMenuExt@@$1?CLSID_ContextMenuExt@@3U_GUID@@B@ATL@@
+0x180029d10 type=0 len=41 refs=
+    .?AV?$CComObject@VCContextMenuExt@@@ATL@@
+0x180029d50 type=0 len=14 refs=
+    .?AUIUnknown@@
+0x180029d70 type=0 len=20 refs=
+    .?AUIRegistrarBase@@
+0x180029d98 type=0 len=20 refs=
+    .?AVCRegObject@ATL@@
+0x180029dc0 type=0 len=26 refs=
+    .?AVCComClassFactory@ATL@@
+0x180029df0 type=0 len=19 refs=
+    .?AUIClassFactory@@
+0x180029e20 type=0 len=56 refs=
+    .?AV?$CComObjectRootEx@VCComMultiThreadModel@ATL@@@ATL@@
+0x180029e70 type=0 len=28 refs=
+    .?AVCComObjectRootBase@ATL@@
+0x180029ea0 type=0 len=23 refs=
+    .?AVCAtlException@ATL@@
+0x180029ec8 type=0 len=20 refs=
+    .?AVCAtlModule@ATL@@
+0x180029ef0 type=0 len=23 refs=
+    .?AU_ATL_MODULE70@ATL@@
+0x180029f18 type=0 len=21 refs=
+    .?AVCShellExtModule@@
+0x180029f40 type=0 len=45 refs=
+    .?AV?$CAtlDllModuleT@VCShellExtModule@@@ATL@@
+0x180029f80 type=0 len=42 refs=
+    .?AV?$CAtlModuleT@VCShellExtModule@@@ATL@@
+0x180029fc0 type=0 len=65 refs=
+    .?AU?$CAtlValidateModuleConfiguration@$00VCShellExtModule@@@ATL@@
+0x18002a018 type=0 len=19 refs=
+    .?AVbad_alloc@std@@
+0x18002a040 type=0 len=19 refs=
+    .?AVexception@std@@
+0x18002a068 type=0 len=21 refs=
+    .?AVlogic_error@std@@
+0x18002a090 type=0 len=22 refs=
+    .?AVlength_error@std@@
+0x18002a0b8 type=0 len=15 refs=
+    .?AVtype_info@@
+0x18002a0d8 type=0 len=30 refs=
+    .?AVbad_array_new_length@std@@
+0x18002a108 type=0 len=23 refs=
+    .?AVbad_exception@std@@

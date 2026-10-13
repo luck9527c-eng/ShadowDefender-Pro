@@ -1,0 +1,563 @@
+!This program cannot be run in DOS mode.
+RichgS
+h.rdata
+H.data
+.pdata
+B.reloc
+RZRZPX3
+D$09\$0H
+S[S[S[H
+W_PXW_H
+WATAUH
+SVWATAUAVAWH
+QYV^V^A
+A_A^A]A\_^[
+ZPXV^QY@
+RZS[W_
+dkptuzH
+UVWATAUH
+A]A\_^]
+UVWATAUAVAWH
+A_A^A]A\_^]
+x ATAUAVH
+0A^A]A\
+W_S[RZE
+8dkptu
+Mcl$@L
+LcD$\M
+D$HH;D$P
+H;D$P}
+D$HD;l$\
+l$PL;l$xL
+t$ WATAUAVAWH
+PXW_PXE
+A_A^A]A\_
+L+\$0I
+@A_A^A]A\_^]
+l$ VWATH
+H`H9=Q
+dkptD8
+4W_S[QYH
+|$hD98
+[PXV^V^H
+t$hD;0
+t$ WATAUH
+D9(vxI
+dkptI;
+@SUVWATAUAVAWH
+L+d$0L
+9C<uv9K uq
+X9s<tA
+HA_A^A]A\_^][
+SUVWATAUAVAWH
+L+d$@M;
+H+D$0L
+9G<uv9O uq
+Q9w<t:
+XA_A^A]A\_^][
+w D9w u
+PA_A^A]A\_^]
+@@H!L$PH
+H;L$@}.E
+H+D$HH
+o D9o u$H
+D9n u,H
+L+|$Xy
+D$0D!|$(
+D$@H+L$XH
+D9n u'H
+A_A^A]A\_^][
+0A_A^A]A\_^]
+9s$t@f9s*u:<
+us8Q un8Q!ui8Q"ud8Q#u_
+0A]A\_
+dkptH+
+pA_A^A]A\_^]
+H9T$X}
+s WATAUAVAWH
+pA_A^A]A\_^]H
+0A_A^A]A\_H
+0A]A\_H
+9D$dtS
+D$dt'H
+D9l$xt
+L9d$Xt
+QYW_QY
+QYV^V^
+oQYQYRZ
+RZW_QYH
+s6H9)v
+APXQYW_H
+V^RZV^H
+ A_A^A]A\_^]
+PXV^V^H
+ A]A\_
+6RZQYRZH
+PXQYPX
+bPXPXV^
+TuhfD9TA
+TuXfD9TA
+O0fD9iXu
+u-L9q@u'H
+D9nLuKA:
+uyD9nLu:eH
+s/D9nLu)eH
+JH9o8t9H
+l$ VATAUAVAWH
+0A_A^A]A\^
+\$ UVWATAUAVAWH
+t?H9H0u9eH
+t#H9H0u
+A8t$8u
+tvH9E0up
+8A_A^A]A\_^][
+SWATAUAVAWH
+t#I9F0u
+hA_A^A]A\_[
+ A_A^A]A\_
+ATAUAVH
+W_S[V^
+C@D90uGH
+H!\$ H
+@A^A]A\
+0W_RZRZH;=
+u @8=n
+dkptE9<$
+dkptL;
+[uPXQYPXH
+2EV^V^V^H
+lV^PXPXD;
+V^PXW_H
+VWATAUAVH
+A^A]A\_^
+|b9|$h|\H
+VWATAUAWH
+|^H9l$xuWA
+W_V^S[H
+A_A]A\_^
+S[QYRZD
+@SUVWATH
+A\_^][
+W_PXV^I;
+fE9(tH
+ A^A]A\
+PTnbA;
+p WATAUAVAWH
+|$ ATAVAWH
+A_A^A\
+A^A]A\
+H`L9%u
+l$ VWATAUAVH
+fE9x u
+T$ fA;
+AUAVAWH
+A_A^A]
+h VWATH
+WATAUAVAWH
+h VWATAUAVH
+H9D$hu]A
+W_V^V^H
+UVWATAUAVAWL
+D$PA2M
+\$XA_A^A]A\_^]
+fffffff
+diskpt!StorDispatchIo: InitializeBitmap Start
+diskpt!StorDispatchIo: InitializeBitmap Stop
+diskpt!StorInitializeVolumeContext: FltDeviceIoControl(IOCTL_DISK_GET_DRIVE_GEOMETRY) failed(%x)
+diskpt!StorInitializeVolumeContext: BytesPerSector = %d
+diskpt!StorInitializeVolumeContext: FltDeviceIoControl(IOCTL_DISK_GET_PARTITION_INFO) failed(%x)
+diskpt!StorInitializeVolumeContext: ExAllocatePoolWithTag failed
+diskpt!StorInitializeVolumeContext: FltReadWriteSectors failed(%x)
+diskpt!StorInitializeVolumeContext: StorFindMapFile failed(%x)
+diskpt!StorInitializeVolumeContext: ERROR MapWindowCapacity = %d
+diskpt!StorInitializeVolumeContext: ERROR (MapTableSize = %d)
+diskpt!StorInitializeVolumeContext: MmAllocateContiguousMemory(%d) failed
+diskpt!StorInitializeVolumeContext: AllocateBitmapSize doesn't match!
+diskpt!StorInitializeVolumeContext: IoCreateDevice failed(%x)
+diskpt!StorInitializeVolumeContext: IoCreateSymbolicLink failed(%x)
+diskpt!StorPreInitBitmap: ZwCreateFile failed(%x)
+diskpt!StorInitializeVolumeContext: PreInitBitmap Start
+diskpt!StorInitializeVolumeContext: PreInitBitmap Stop
+diskpt!StorInitializeVolumeContext: StorInitializeBitmap failed(%x)
+diskpt!StorInitializeBitmap: ExAllocatePoolWithTag failed
+diskpt!StorInitializeBitmap: FltReadWriteSectors failed
+diskpt!StorInitNtfsBitmap: ExAllocatePoolWithTag failed
+diskpt!StorInitNtfsBitmap: FltReadWriteSectors failed(%x)
+diskpt!StorInitNtfsBitmap: ExAllocatePoolWithTag2 failed
+diskpt!StorInitNtfsBitmap: Can't find NtfsAttributeData
+diskpt!StorInitNtfsBitmap: ExAllocatePoolWithTag3 failed
+diskpt!StorInitNtfsBitmap: find Resident attribute
+diskpt!StorFindMapFile: ZwCreateFile(%ws) failed(%x)
+diskpt!StorFindMapFile: ZwReadFile(%ws) failed(%x)
+diskpt!StorFindMapFile: invalid config info(%x-%x-%x)
+diskpt!StorFindMapFile: AllocateBitmapSize = %d
+diskpt!StorFindMapFile: ZwQueryInformationFile(%ws) failed(%x)
+diskpt!StorFindMapFile: map file size(%d) doesn't match volume size(%I64d)
+diskpt!StorFindMapFile: ExAllocatePool failed
+diskpt!StorFindMapFile: ZwFsControlFile(%ws) failed(%x)
+diskpt!StorFindMapFile: unrecognized volume
+ Shadow Defender is committing changes. When this operation
+ completes, your computer will restart or shutdown. Please wait...
+ Committing %c: ...
+ 0 percent completed.
+ %d percent completed.
+ 100 percent completed.
+diskpt!FsfTestVolume: ZwCreateFile(%wZ) failed(%x)
+diskpt!FsfTestVolume: ZwReadFile(%wZ) failed(%x)
+diskpt!FsfTestVolume: invalid config info(%x-%x-%x)
+d:\work\defender\sys\diskpt\objfre_win7_amd64\amd64\diskpt.pdb
+VATAUAVAWH
+A_A^A]A\^
+fD9 t,
+\$x!|$pfD
+fF9$Iu
+T$ H9\$ 
+RZRZW_
+H!l$XH!l$pH!l$xH
+`B:M?:
+RZQYRZH
+S[S[S[3
+D$(dpwiH
+D$(dpicH
+D$(dprcH
+D$(dpScH
+D$(PTncH
+D$(PTscH
+D$(PTwiH
+_stricmp
+ExAllocatePoolWithTag
+IoBuildDeviceIoControlRequest
+IoDeleteSymbolicLink
+ExFreePoolWithTag
+ExReleaseFastMutex
+ExAcquireFastMutex
+ZwReadFile
+KeSetPriorityThread
+RtlInitUnicodeString
+IoDeleteDevice
+KeSetEvent
+wcsncpy
+MmGetSystemRoutineAddress
+IoRegisterLastChanceShutdownNotification
+RtlAppendUnicodeToString
+KeInitializeEvent
+IoFreeMdl
+KeDelayExecutionThread
+ZwCreateFile
+wcsrchr
+wcsstr
+PsCreateSystemThread
+IoBuildAsynchronousFsdRequest
+ZwQueryValueKey
+ExInterlockedInsertTailList
+PsTerminateSystemThread
+InitSafeBootMode
+ZwClose
+IofCompleteRequest
+ObReferenceObjectByHandle
+KeWaitForSingleObject
+IoFreeIrp
+PsGetVersion
+ExInterlockedRemoveHeadList
+MmUnlockPages
+ZwQueryInformationProcess
+_wcsupr
+IoCreateSymbolicLink
+RtlCopyUnicodeString
+ObfDereferenceObject
+ZwQueryInformationFile
+ExAllocatePoolWithTagPriority
+IoRegisterFsRegistrationChange
+IofCallDriver
+ZwOpenKey
+_wcsicmp
+sprintf
+ProbeForRead
+IoAcquireRemoveLockEx
+KeClearEvent
+RtlGetElementGenericTable
+KeReadStateEvent
+ExInitializeNPagedLookasideList
+ZwFsControlFile
+IoGetStackLimits
+IoBuildSynchronousFsdRequest
+IoGetRelatedDeviceObject
+ZwMapViewOfSection
+swprintf
+IoFreeWorkItem
+ExpInterlockedPushEntrySList
+IoReleaseRemoveLockEx
+IoSetThreadHardErrorMode
+KeReleaseSpinLock
+MmFreeContiguousMemory
+ExpInterlockedPopEntrySList
+RtlDeleteElementGenericTable
+IoDetachDevice
+RtlEqualUnicodeString
+MmBuildMdlForNonPagedPool
+ObQueryNameString
+MmMapLockedPagesSpecifyCache
+IoGetDeviceObjectPointer
+ZwUnmapViewOfSection
+IoGetCurrentProcess
+ExEventObjectType
+IoAllocateWorkItem
+PoStartNextPowerIrp
+RtlLookupElementGenericTable
+ExQueryDepthSList
+IoReleaseRemoveLockAndWaitEx
+RtlRandom
+IoGetAttachedDeviceReference
+IoAttachDeviceToDeviceStack
+PoCallDriver
+RtlCompareUnicodeString
+IoAllocateIrp
+ObfReferenceObject
+PsGetCurrentThreadId
+PsGetCurrentProcessId
+IoInitializeRemoveLockEx
+IoCreateDevice
+IoQueueWorkItem
+ZwWriteFile
+IoGetDeviceProperty
+ZwOpenSection
+DbgPrint
+IoAllocateMdl
+MmAllocateContiguousMemory
+RtlIsGenericTableEmpty
+RtlInitializeGenericTable
+RtlInsertElementGenericTable
+KeAcquireSpinLockRaiseToDpc
+wcschr
+ExQueueWorkItem
+ExAcquireResourceExclusiveLite
+ZwCreateKey
+KeLeaveCriticalRegion
+PsSetLoadImageNotifyRoutine
+IoGetAttachedDevice
+ZwQuerySymbolicLinkObject
+_wcsnicmp
+IoCreateFile
+ZwSetValueKey
+ZwOpenSymbolicLinkObject
+KeEnterCriticalRegion
+ZwSetInformationFile
+IoVolumeDeviceToDosName
+IoFileObjectType
+ExAllocatePool
+ZwQueryDirectoryFile
+ExAcquireResourceSharedLite
+ExReleaseResourceLite
+RtlAppendUnicodeStringToString
+ZwFlushKey
+FsRtlInsertPerStreamContext
+PsThreadType
+ZwDeviceIoControlFile
+FsRtlLookupPerStreamContextInternal
+ExInitializePagedLookasideList
+ZwCreateSection
+ExInitializeResourceLite
+IoSynchronousPageWrite
+RtlVolumeDeviceToDosName
+_snwprintf
+IoGetTopLevelIrp
+ZwUnloadKey
+ZwQuerySecurityObject
+ExInterlockedPopEntryList
+ZwDeleteValueKey
+FsRtlIsNameInExpression
+ZwEnumerateValueKey
+ZwSetSecurityObject
+ZwLoadKey
+MmIsAddressValid
+ExInterlockedPushEntryList
+ZwDeleteKey
+KeBugCheckEx
+ntoskrnl.exe
+KeQueryPerformanceCounter
+HAL.dll
+ObOpenObjectByPointer
+IoDeviceObjectType
+RtlLengthSecurityDescriptor
+SeCaptureSecurityDescriptor
+RtlCreateSecurityDescriptor
+RtlSetDaclSecurityDescriptor
+RtlAbsoluteToSelfRelativeSD
+IoIsWdmVersionAvailable
+SeExports
+RtlLengthSid
+RtlAddAccessAllowedAce
+RtlGetSaclSecurityDescriptor
+RtlGetDaclSecurityDescriptor
+RtlGetGroupSecurityDescriptor
+RtlGetOwnerSecurityDescriptor
+RtlFreeUnicodeString
+__C_specific_handler
+AXAYAZA[A\A]A^A__^][ZYX
+)4F7$I
+"`2\(I
+#ADBHI
+0M)4$I
+L)#H%M
+E+1H%x
+1QPF?H
+:vK?M1
+I34$M!
+1AVYQH
+M+,$M!
+p17I9>I
+*Q2FBM!
+2db*I9
+/d(idH
+2AVYQH
+d!M9:A
+/AUYQH
+I34$I1
+y"D13I
+&nw}SI
+8?vYH!
+PQRSSUVWAWAVAUATASARAQAP
+@X|0$0
+U!H)v0
+g?6Q90
+_S*tI0
+c7KAb1x
+<V*/fD
+cK)Bh,
+L%WxH0
+s(z(x-0
+PS0bn]9z
+_S4Sd=9z
+(dcph"
+>"osx/x
+h.(;eM
+Jh2xo0
+c9S4C.
+R0cl*;z
+oo, OvN
+;`1x(0
+^S4Sv=9v
+5fFw`2
+=Trqr$T
+_3Q0SR
+`i*xjR$0
+o3;Aqu0
+RG?9S4cE
+^R4Sv=9z+
+~IT4cR
+^Q]yj0
+dW]4 j
+L%Jce0
+}&SC!+
+Washington1
+Redmond1
+Microsoft Corporation1)0'
+ Microsoft Code Verification Root0
+110415194533Z
+210415195533Z0l1
+DigiCert Inc1
+www.digicert.com1+0)
+"DigiCert High Assurance EV Root CA0
+:8P[w1
+AA"Nea
+Dhttp://crl.microsoft.com/pki/crl/products/MicrosoftCodeVerifRoot.crl0
+"DigiCert EV Code Signing CA (SHA2)0
+200729000000Z
+230803120000Z0
+Beijing1
+Private Organization1
+91110108MA01PLRK7N1
+Beijing1503
+,Beijing YiChengWeiLai Culture-Tech Co., Ltd.1503
+,Beijing YiChengWeiLai Culture-Tech Co., Ltd.0
+CN-BEIJING-91110108MA01PLRK7N0
+1http://crl3.digicert.com/EVCodeSigningSHA2-g1.crl07
+1http://crl4.digicert.com/EVCodeSigningSHA2-g1.crl0K
+https://www.digicert.com/CPS0
+http://ocsp.digicert.com0H
+<http://cacerts.digicert.com/DigiCertEVCodeSigningCA-SHA2.crt0
+120418120000Z
+270418120000Z0l1
++.+1Xf
+http://ocsp.digicert.com0I
+=http://cacerts.digicert.com/DigiCertHighAssuranceEVRootCA.crt0
+:http://crl3.digicert.com/DigiCertHighAssuranceEVRootCA.crl0@
+:http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl0
+.http://www.digicert.com/ssl-cps-repository.htm0
+"DigiCert EV Code Signing CA (SHA2)
+20200802011201Z
+www.digicert.com110/
+(DigiCert SHA2 Assured ID Timestamping CA0
+191001000000Z
+301017000000Z0L1
+DigiCert, Inc.1$0"
+TIMESTAMP-SHA256-2019-10-150
+gz8wT@
+,http://crl3.digicert.com/sha2-assured-ts.crl02
+,http://crl4.digicert.com/sha2-assured-ts.crl0
+http://ocsp.digicert.com0O
+Chttp://cacerts.digicert.com/DigiCertSHA2AssuredIDTimestampingCA.crt0
+J/nz<cn7
+www.digicert.com1$0"
+DigiCert Assured ID Root CA0
+160107120000Z
+310107120000Z0r1
+fnVa')
+http://ocsp.digicert.com0C
+7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0
+4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:
+4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0P
+8aMbF$
+V3"/"6
+(DigiCert SHA2 Assured ID Timestamping CA
+200802011201Z0+
+Microsoft Corporation1806
+/Microsoft Windows Third Party Component CA 20140
+200311173114Z
+210305173114Z0
+Microsoft Corporation1;09
+2Microsoft Windows Hardware Compatibility Publisher0
+UW."Nz
+ejPGCj
+E0C1)0'
+ Microsoft Operations Puerto Rico1
+232147+4590350
+chttp://www.microsoft.com/pkiops/crl/Microsoft%20Windows%20Third%20Party%20Component%20CA%202014.crl0
+ehttp://www.microsoft.com/pkiops/certs/Microsoft%20Windows%20Third%20Party%20Component%20CA%202014.crt0
+5tdVGa
+r?~\fK
+~-nAj,YF
+Microsoft Corporation1200
+)Microsoft Root Certificate Authority 20100
+141015203127Z
+291015204127Z0
+=)x(0t
+3http://www.microsoft.com/pkiops/Docs/Repository.htm0
+Ehttp://crl.microsoft.com/pki/crl/products/MicRooCerAut_2010-06-23.crl0Z
+>http://www.microsoft.com/pki/certs/MicRooCerAut_2010-06-23.crt0
+iE'?s#2
+UYd`3>.
+/Microsoft Windows Third Party Component CA 2014
+jYg*ge
+(https://www.microsoft.com/en-us/windows 0
+20200802015639.506Z0
+Microsoft Corporation1%0#
+Microsoft America Operations1&0$
+Thales TSS ESN:3BBD-E338-E9A11%0#
+Microsoft Time-Stamp Service
+Microsoft Corporation1&0$
+Microsoft Time-Stamp PCA 20100
+191113214039Z
+210211214039Z0
+Microsoft Time-Stamp Service0
+Ehttp://crl.microsoft.com/pki/crl/products/MicTimStaPCA_2010-07-01.crl0Z
+>http://www.microsoft.com/pki/certs/MicTimStaPCA_2010-07-01.crt0
+100701213655Z
+250701214655Z0|1
+$`2X`F
+1http://www.microsoft.com/PKI/docs/CPS/default.htm0@
+oK0D$"<
+r~akow
+20200802042901Z
+20200803042901Z0t0:
+Microsoft Time-Stamp PCA 2010
