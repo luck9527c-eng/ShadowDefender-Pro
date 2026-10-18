@@ -265,6 +265,8 @@ vault and seeds functions at every table target (125/136 recovered for
 | `tools/ida_unhide.py` | Re-class a `.reloc` vault as code, seed functions at every dispatch-table target, dump the recovered functions. |
 | `tools/unhide_scan.py` | Locate the relocator/table/thunks without IDA. |
 | `tools/vm.py` | VM profiler/disassembler: opcode length table, per-opcode advance and opcode-read offset, program listing. |
+| `tools/vm_emu.py` | Unicorn harness that executes the handlers and logs every VM dispatch (program-level). |
+| `tools/vm_emu_ioctl.py` | Same, entered through the real `IRP_MJ_DEVICE_CONTROL` stub with a fabricated IRP/IO_STACK_LOCATION. See `docs/11-vm-emulation.md`. |
 | `tools/discalc.py` | VA → file offset → capstone disassembly helper. |
 | `tools/refs.py` | file-offset ↔ RVA ↔ string ↔ xref helper. |
 | `tools/strings.py`, `tools/fn.py` | ASCII/UTF-16 string extraction; function-block extraction from a hexrays export. |

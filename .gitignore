@@ -32,3 +32,6 @@ samples/user.dat
 # Not redistributed. See docs/10-installer.md for the analysis; the payload can
 # be recreated from a copy of the supplied package.
 安装包/
+
+# Emulator traces are reproducible (tools/vm_emu*.py); keep them out of history.
+recon/vm/

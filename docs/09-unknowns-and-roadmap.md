@@ -62,9 +62,18 @@ runtime behaviour.
 
 Recovered: instruction encoding shape, 71 opcode lengths with certainty, the
 `IP`-slot convention, and the semantics of opcodes 1, 2, 3, 10, 12, 79 (~5 % of
-the set). Unknown: the remaining ~130 opcodes' semantics, the branch/predicate
-encoding for the variable-length control-flow opcodes, and the calling
-convention used by the "call" opcodes (opcode 0 and the 20-byte forms 14/45).
+the set). **The length table is now validated against real execution** — see
+`docs/11-vm-emulation.md` §3.1. Unknown: the remaining ~130 opcodes' semantics,
+the branch/predicate encoding for the variable-length control-flow opcodes, and
+the calling convention used by the "call" opcodes (opcode 0 and the 20-byte
+forms 14/45).
+
+A working Unicorn harness exists (`tools/vm_emu.py`, `tools/vm_emu_ioctl.py`).
+It executes the vendor handlers and records the true dispatch sequence, but a
+cold, zeroed VM state is not sufficient: the DEVICE_CONTROL program runs a
+50-opcode data-loading prologue and then unwinds (`docs/11` §3–§4). The next step
+is to warm the state by running `DriverEntry` and the INIT programs first, or to
+replay a live-captured state.
 
 ### 2.4 `diskpt.crt` field semantics
 
