@@ -27,3 +27,8 @@ __pycache__/
 # file from the analysed installation if you need to follow the worked example
 # in docs/07-config-and-formats.md.
 samples/user.dat
+
+# The vendor's installation package (contains the signed commercial binaries).
+# Not redistributed. See docs/10-installer.md for the analysis; the payload can
+# be recreated from a copy of the supplied package.
+安装包/

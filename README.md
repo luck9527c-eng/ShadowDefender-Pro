@@ -189,6 +189,8 @@ docs/                 analysis and reconstruction documents (this is the deliver
   07-config-and-formats.md   every persistent format
   08-licensing-and-crypto.md password, registration, trial, RC4
   09-unknowns-and-roadmap.md what is still unknown and how to close it
+  10-installer.md          the installation package: four-layer SFX chain, payload,
+                           install sequence, and the origin of the password salt
 recon/
   analysis/           detailed sub-investigations
     defender_gui.md         1224 lines, GUI + daemon
@@ -259,6 +261,19 @@ Commit.exe      e05d8725d1fd01f7dd5378d45c771fd90c0f49ef584701d71da7924411717fbe
 ShellExt.dll    14126b8ac600b26882cca045942295899dcbdf5a31222d73173081681b027ca0
 Uninstall.exe   78cf5509a1558758fdbb99a78cc5ba4794e12ee03401196baa497f1ed5a7a850
 ```
+
+Installation package (supplied separately; see `docs/10-installer.md`):
+
+```
+安装包\Setup.exe          9d2b7851eacc1a2eb43d8dc1e8a999c592c9855df3ed45c1fa26d09425b2d503
+  embedded Setup.exe     1ed6170d2a71baf93d8bbd13907668c35ba51fc26f8b32e14d97b22baa4c3e09
+  embedded Setup_x64.exe eef48e01728cbaccff97339f39da3e5c0854d7b2f20a29744995bdd833069b25
+  embedded Setup_x86.exe 946c4e370bfc87cf896edd8f0bcdc2c981cb7ee94d7569b5d6fdf3a55fe5d267
+```
+
+The x64/x86 payloads are byte-identical to the installed tree; in particular the
+installed driver is the package's **`diskpt.win10.sys`** (renamed to `diskpt.sys`)
+and the installed daemon is **`Daemon.exe`** (renamed to `DefenderDaemon.exe`).
 
 > A likely **false lead** also present on the host: `C:\Windows\System32\drivers\SDFRd.sys`
 > is a **Microsoft** inbox driver ("SDF Reflector", WHQL-signed). Despite the

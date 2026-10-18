@@ -21,9 +21,24 @@
 | IPC topology (which device/object/mutex, who uses it) | observed | imports, call sites, object names |
 | Obfuscation scheme (`.reloc` vault, relocator, VM, tables, programs) | observed | section table, disassembly, the unhide toolchain |
 
-## 2. What is unknown
+## 1a. Resolved since the first pass
 
-### 2.1 `\\.\DpControl` payload above the magic (highest value)
+The installation package (`docs/10-installer.md`) answered four questions that
+the installed tree alone could not:
+
+| Question | Resolution | Evidence |
+| --- | --- | --- |
+| Which driver image is actually installed? | The package's **`diskpt.win10.sys`**, renamed to `diskpt.sys`. The package also carries a 2017 `diskpt.sys` (v1.4.0.672) for older systems. | SHA-256 identical; `recon/verification.md` V7 |
+| Where does the password salt `GUID` come from? | The **installer** generates it with `CoCreateGuid` and writes `HKLM\SYSTEM\CurrentControlSet\Services\diskpt\GUID`. The driver contains no GUID logic. | installer strings + `CoCreateGuid` IAT; driver has no `GUID` string |
+| Who is the vendor for the 1.5 line? | Installer and 2020 driver are EV-signed by **Beijing YiChengWeiLai Culture-Tech Co., Ltd.**; the 2017 driver by **StarSoftComm(China) Ltd.** | Authenticode on every artefact |
+| Why `DefenderDaemon.exe` when the payload says `Daemon.exe`? | Renamed during install; the files are byte-identical. | SHA-256 identical |
+
+Two related facts also emerged: the driver is deployed by **file copy plus
+service-key creation**, not by an INF (the package contains no `.inf`), and the
+same `.reloc`/VM obfuscation framework is present in the 1.4 driver as well,
+with a slightly smaller vault (`0x45518` vs `0x48334`).
+
+## 2. What is unknown### 2.1 `\\.\DpControl` payload above the magic (highest value)
 
 The request/response buffer is 136 bytes (`0x88`), `METHOD_BUFFERED`, and begins
 with `0x74706B64` (`'dkpt'`). Everything after byte 4 is parsed by the driver's
