@@ -1,0 +1,4 @@
+del_func -> True
+del_items -> True
+create_insn -> 1
+add_func -> True

@@ -90,18 +90,26 @@ extern "C" {
 #define DP_MSG_MAGIC                0x74706B64u     /* 'dkpt' — also the pool tag */
 #define DP_MSG_BYTES                0x88            /* 136 */
 
+/* Command codes carried in dp_msg.command. Decoded from the native demultiplexer
+ * (sub_280063121); see docs/12-ioctl-protocol.md. */
+enum dp_command {
+    DP_CMD_ZERO              = 0,     /* not yet isolated                     */
+    DP_CMD_REGISTER_EVENT    = 101,   /* arg0 = progress event handle         */
+    DP_CMD_SIGNAL_EVENTS     = 102,   /* signal all registered events         */
+    DP_CMD_REGISTER_PAIR     = 200,   /* arg0, arg1 = event handles           */
+    DP_CMD_REGISTER_THREAD   = 201,   /* register calling thread              */
+    DP_CMD_UNREGISTER_THREAD = 202,   /* unregister calling thread            */
+    DP_CMD_REGISTER_FILES    = 300,   /* arg0, arg1 = file handles            */
+    DP_CMD_SET_CACHE_SIZE    = 500,   /* arg0 = bytes; stored as KB           */
+    DP_CMD_GET_CACHE_SIZE    = 501,   /* arg0/arg1 out: total/used bytes      */
+};
+
 typedef struct dp_msg {
-    uint32_t magic;                 /* DP_MSG_MAGIC */
-    union {
-        uint8_t  raw[DP_MSG_BYTES - 4];
-        struct {
-            /* UNKNOWN: operation selector, arguments, result.
-             * Recoverable only by decoding VM program 0x6B8F3.
-             * See docs/09-unknowns-and-roadmap.md §2.1. */
-            uint32_t op;
-            uint32_t arg[32];
-        } u;
-    } payload;
+    uint32_t magic;                 /* 0x00  DP_MSG_MAGIC                   */
+    uint32_t command;               /* 0x04  enum dp_command                */
+    uint64_t arg0;                  /* 0x08  handle / size, per command     */
+    uint64_t arg1;                  /* 0x10  second handle / value          */
+    uint8_t  reserved[DP_MSG_BYTES - 0x18];
 } dp_msg;
 
 /* IOCTL codes. DeviceType 0x8000, METHOD_BUFFERED, FILE_ANY_ACCESS unless noted.

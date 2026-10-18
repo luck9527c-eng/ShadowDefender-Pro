@@ -1,0 +1,74 @@
+Possible file format: MS-DOS executable (EXE) (D:\Apps\IDApro\loaders\dos.dll)
+Possible file format: Portable executable for AMD64 (PE) (D:\Apps\IDApro\loaders\pe.dll)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+  1908736   233 8192 allocating memory for b-tree...
+  1908736   233 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+  4079616            total memory allocated
+
+Loading file 'D:\workSpace\ShadowDefender-Pro\work\diskpt_ioctl.sys' into database...
+Detected file format: Portable executable for AMD64 (PE)
+Loading processor module D:\Apps\IDApro\procs\pc.dll for metapc...OK
+Autoanalysis subsystem has been initialized.
+  0. Creating a new segment  (0000000280051000-0000000280072000) ... ... OK
+  1. Creating a new segment  (0000000280072000-0000000280074000) ... ... OK
+  2. Creating a new segment  (0000000280074000-0000000280076000) ... ... OK
+  3. Creating a new segment  (0000000280076000-0000000280077000) ... ... OK
+  4. Creating a new segment  (0000000280077000-0000000280079000) ... ... OK
+  5. Creating a new segment  (0000000280079000-000000028007C000) ... ... OK
+  6. Creating a new segment  (000000028007D000-00000002800C6000) ... ... OK
+Reading imports directory...
+Reading exception directory (.pdata)...
+Applying fixups...
+  7. Creating a new segment  (0000000280072560-0000000280074000) ... ... OK
+PDB: using PDBIDA provider
+PDB: downloading http://msdl.microsoft.com/download/symbols/diskpt.pdb/F3272DD66CCB46AAB57B6C950B4579C32/diskpt.pdb => C:\Users\ADMINI~1\AppData\Local\Temp\ida\diskpt.pdb\F3272DD66CCB46AAB57B6C950B4579C32\diskpt.pdb
+Could not find PDB file 'diskpt.pdb'.
+Please check _NT_SYMBOL_PATH
+D:\workSpace\ShadowDefender-Pro\work\diskpt_ioctl.sys: failed to load pdb info.
+
+Do you want to browse for the pdb file on disk? -> ~Y~es
+Plan  FLIRT signature: Windows Driver Kit 7/10 64bit
+Plan  FLIRT signature: Windows Driver Kit 7/10 64bit
+main() function at 280079008, named "DriverEntry"
+Type library 'ntddk64_win7' loaded. Applying types...
+Types applied to 162 names.
+Plan  FLIRT signature: SEH for vc64 7-14
+Type library 'ntapi64_win7' loaded. Applying types...
+Types applied to 3 names.
+Marking typical code sequences...
+Flushing buffers, please wait...ok
+File 'D:\workSpace\ShadowDefender-Pro\work\diskpt_ioctl.sys' has been successfully loaded into the database.
+Flushing buffers, please wait...ok
+Hex-Rays Decompiler plugin has been loaded (v9.4.0.260713)
+  License: 14-0000-FFFF-88  (1 user)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+Hex-rays version 9.4.0.260713 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded (idalib mode, server managed externally)
+Using type parser: legacy
+IDA is analysing the input file...
+You may start to explore the input file right now.
+Using FLIRT signature: Windows Driver Kit 7/10 64bit
+Using FLIRT signature: Windows Driver Kit 7/10 64bit
+Using FLIRT signature: SEH for vc64 7-14
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+D:/workSpace/ShadowDefender-Pro/tools/ida_force_stub.py:14: DeprecationWarning: get_func() is deprecated, use get_func_start or get_func_entry_info()
+  if ida_funcs.get_func(STUB):
+The decompiler assumes that the segment '.idata' is read-only because of its NAME.
+All data references to the segment will be replaced by constant values.
+This may lead to drastic changes in the decompiler output.
+If the segment is not read-only, please change the segment NAME.
+
+In general, the decompiler checks the segment permissions, class, and name
+to determine if it is read-only.
+ -> OK
+FORCE DONE
+Flushing buffers, please wait...ok
+Unloading IDP module D:\Apps\IDApro\procs\pc.dll...

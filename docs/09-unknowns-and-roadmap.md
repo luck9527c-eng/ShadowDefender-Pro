@@ -38,19 +38,26 @@ service-key creation**, not by an INF (the package contains no `.inf`), and the
 same `.reloc`/VM obfuscation framework is present in the 1.4 driver as well,
 with a slightly smaller vault (`0x45518` vs `0x48334`).
 
-## 2. What is unknown### 2.1 `\\.\DpControl` payload above the magic (highest value)
+## 2. What is unknown
 
-The request/response buffer is 136 bytes (`0x88`), `METHOD_BUFFERED`, and begins
-with `0x74706B64` (`'dkpt'`). Everything after byte 4 is parsed by the driver's
-bytecode program at RVA `0x6B8F3`, which is reached from
-`IRP_MJ_DEVICE_CONTROL` (`sub_2800630D8`) through the relocator.
+### 2.1 `\.\DpControl` payload above the magic — RESOLVED
 
-Unknown: the operation selector, the argument/result field layout, the length
-semantics, and how the installation-derived IOCTL offset `K` (from the
-`Services\diskpt\GUID` value) maps onto the operation space.
+**Closed.** The payload is not parsed by the VM: the VM returns into an
+undecoded native region that contains the real demultiplexer. See
+`docs/12-ioctl-protocol.md`. Summary:
 
-**Why it matters:** it is the whole control protocol — mode changes, exclusions,
-commit requests, configuration, licensing state.
+* 136-byte in/out buffer; both `InputBufferLength` and `OutputBufferLength` must
+  equal `0x88`;
+* `DWORD[0] = 0x74706B64 ('dkpt')`, `DWORD[1] = command`, `QWORD[2..3]` = args;
+* fixed IOCTLs: `0x8000309C` (session/ID), `0x800030A0` (returns the 128-byte
+  installation blob), `0x80000CD4` (register calling process),
+  `0x80000D18` (teardown), `0x80002D48` (volume flag; returns `0x20000001`);
+* command channel: `0, 101, 102, 200, 201, 202, 300, 500, 501` — progress
+  events, session thread registration, file-handle registration, write-cache
+  set/get.
+
+Still open: command 0, the VM-derived IOCTL number for the command channel, and
+the 128-byte installation-blob layout.
 
 ### 2.2 Driver-side operation set
 
