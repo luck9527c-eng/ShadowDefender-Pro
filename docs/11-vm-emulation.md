@@ -1,9 +1,10 @@
 # Shadow Defender — Dynamic VM Emulation
 
-> Status: harness working; the driver's control-plane program is executable under
-> emulation, but a *cold* state is not sufficient to reach the IOCTL
-> demultiplexer. This document records what the emulator established, the exact
-> blocker, and the next step.
+> Status: harness working; the driver's init programs and its DEVICE_CONTROL
+> program both execute under emulation, and the state has been warmed
+> successfully. The remaining task is locating where the IOCTL code is actually
+> read — this document records what was established, what was ruled out, and the
+> next step.
 >
 > Tools: `tools/vm_emu.py`, `tools/vm_emu_ioctl.py` (Unicorn 2.1.4).
 > Traces: `recon/vm/`.
@@ -121,7 +122,89 @@ incorrectly it lands in that data, executes garbage and jumps to `0x2AEEA`
 (an image RVA used as an absolute address). That failure is an artefact of the
 harness, **not** driver behaviour.
 
-## 4. The blocker: cold VM state
+## 3.5 Warm-up now works, and the state is only 0x153 bytes
+
+Two corrections to the first pass:
+
+**The state structure is 0x153 bytes, not 0x800.** The first opcode handler
+(`Dp_H000`) starts at RVA `0x2D353`, so the state occupies exactly
+`0x2D200 .. 0x2D352`. Clearing 0x800 bytes erased the first handlers and made
+every warm program die after one dispatch. Note also that the Hex-Rays
+pseudocode prints these offsets in **decimal**: `v0 + 335` is `0x14F`, and
+`v0 + 251` is `0xFB`.
+
+**The init sequence can be run program-by-program.** `DriverEntry` and its
+helpers are themselves trampolines into the VM, and each program is reachable
+directly:
+
+```
+DriverEntry        -> prog 0x6D1A2  (push 6D1A2h; push 4Fh; jmp relocator)
+DriverEntry helper -> prog 0x6D7B1  (sub_280079604)
+                   -> prog 0x6808A  (sub_280051078)
+random seed        -> prog 0x7503A  (sub_280079A08, RtlRandom seeded from
+                                     KeQueryPerformanceCounter)
+```
+
+Running `0x6808A, 0x6D7B1, 0x6D1A2, 0x7503A` in that order against one shared
+state yields **63 / 2440 / 273 / 69 dispatches** respectively, i.e. the state is
+genuinely initialised. The harness exposes this as `--warm`.
+
+## 3.6 The 50-opcode prologue is IOCTL-independent — ruled out
+
+With the state warmed, the DEVICE_CONTROL program still produces the *same* 50
+dispatches for `0x80000D18`, `0x800030A0` and `0x80002D48`, and still ends by
+jumping to `0x2AEEA` (an RVA used as an absolute address).
+
+Conclusion, and it is a useful one: **program `0x6B8F3` is not the IOCTL
+demultiplexer.** Its prologue loads data words and never consults the
+`IoControlCode` field of the fabricated `IO_STACK_LOCATION`. The dispatch must
+happen elsewhere — the candidates are:
+
+* the stub's native continuation (the ~2,900 bytes that IDA does not decode),
+* another VM program reached from the stub path,
+* a handler that reads the stack location from a *saved* location rather than
+  from `r14` (which the VM demonstrably reuses as scratch).
+
+## 4. Complete VM program -> caller map
+
+Every one of the 27 programs is a `push <prog>; push 4Fh; jmp relocator` stub in
+the vault tail (`RVA 0x30076..0x35322`). Mapping each stub to the `.text`
+function that jumps to it gives the operation table:
+
+| program | caller (VA) | role |
+| --- | --- | --- |
+| `0x67E9D` | `sub_280051014` | unknown |
+| `0x6808A` | `sub_280051078` | init (called from `DriverEntry`) |
+| `0x6858C` | `sub_280051960` | `StorDispatchIo` |
+| `0x68715` | `sub_280051DB4` | unknown |
+| `0x689CA` | `sub_2800521C4` | unknown |
+| `0x68D0C` | `sub_2800533FC` | unknown (storage path) |
+| `0x68ED7` | `sub_280053EE8` | unknown |
+| `0x690C4` | `sub_2800556EC` | `StorInitializeVolumeContext` |
+| `0x6961C` | `sub_28005C474` | per-instance IRP hook |
+| `0x69976` | `sub_28005C7C4` | per-instance IRP hook |
+| `0x69CD0` | `sub_28005CA40` | per-instance IRP hook |
+| `0x6A02A` | `sub_28005CCBC` | per-instance IRP hook |
+| `0x6A384` | `sub_28005CF18` | per-instance IRP hook |
+| `0x6A6DE` | `sub_28005D0A0` | per-instance IRP hook |
+| `0x6AA10` | `sub_28005D718` | per-instance IRP hook |
+| `0x6AD42` | `sub_28005DD58` | per-instance IRP hook |
+| `0x6B074` | `sub_28005E0D8` | per-instance IRP hook |
+| `0x6B3A6` | `sub_28005E294` | per-instance IRP hook |
+| `0x6B6D8` | `sub_280062D4C` | `IRP_MJ_SHUTDOWN` |
+| **`0x6B8F3`** | **`sub_2800630D8`** | **`IRP_MJ_DEVICE_CONTROL`** |
+| `0x6C45E` | `sub_280065AD0` | unknown |
+| `0x6C870` | `sub_280065DD4` | unknown |
+| `0x6CBD9` | `sub_280066C40` | unknown |
+| `0x6CD90` | `sub_28006E964` | unknown |
+| **`0x6D1A2`** | **`DriverEntry`** | **driver initialisation** |
+| `0x6D7B1` | `sub_280079604` | init helper (`DriverEntry`) |
+| `0x7503A` | `sub_280079A08` | `RtlRandom` seeding |
+
+This closes `docs/09` §2.2 (program attribution) for 19 of 27 programs; the eight
+marked *unknown* have their caller identified but not the operation's meaning.
+
+## 4.1 The original cold-state blocker (kept for the record)
 
 `DriverEntry` (`0x280079008`, RVA `0x29008`) and the INIT routines enter the same
 VM. Those init programs populate function pointers and state slots that the
@@ -137,6 +220,17 @@ Emulating harder does not fix this; the harness has to run the *initialisation
 sequence first*.
 
 ## 5. Next step
+
+**Locate the code that reads `IoControlCode`.** The fastest discriminator is to
+run the same warmed state with two different IOCTL codes and find the first
+instruction whose control flow diverges. Since the VM handlers do not read
+`r14`, the read is probably in native code: single-step from the stub at
+`0x280063101` (where it jumps into the relocator) and, after the VM returns,
+trace the native continuation. The stub's nominal body contains ~2,900 bytes
+that IDA leaves as data; forcing instruction creation there in a scratch
+database is the next cheap experiment.
+
+Only if that path proves to be a dead end does the heavier route apply:
 
 ### Option A — warm the state (preferred, fully static host)
 

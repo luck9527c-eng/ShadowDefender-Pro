@@ -91,6 +91,9 @@ def main():
     ap.add_argument("--out-len", type=lambda s: int(s, 0), default=0x88)
     ap.add_argument("--ioctl2", type=lambda s: int(s, 0), default=None,
                     help="second IOCTL code placed in the input buffer (for dispatchers that read it)")
+    ap.add_argument("--warm", default=None,
+                    help="comma-separated program RVAs to run first (default: driver init programs)")
+    ap.add_argument("--warm-budget", type=int, default=20000)
     args = ap.parse_args()
 
     img = Image(args.image)
@@ -106,9 +109,19 @@ def main():
         if rsz:
             uc.mem_write(base + va, img.data[ra:ra + rsz])
 
-    # The state structure lives inside the vault. Zero it, like a freshly
-    # initialised driver would before the first control request.
-    uc.mem_write(base + STATE_RVA, b"\0" * 0x800)
+    # The VM state lives inside the vault and is exactly 0x153 bytes wide:
+    # 0x2D200 .. 0x2D352, because the first opcode handler starts at 0x2D353.
+    # Zero only that range; a larger clear would erase handler code.
+    uc.mem_write(base + STATE_RVA, b"\0" * 0x153)
+
+    # Pre-relocate the dispatch table into emulated memory and publish it in the
+    # state. The warm-up path enters handler 79 directly (no vendor relocator),
+    # so the table base must already be there. When the vendor relocator does
+    # run later it sees state+0x54 == table and skips the relocation.
+    relocated = [(rva + base) if rva else 0 for rva in table]
+    uc.mem_write(base + TABLE_RVA, struct.pack("<%dQ" % ENTRIES, *relocated))
+    uc.mem_write(base + STATE_RVA + 0x054, struct.pack("<Q", base + TABLE_RVA))
+    uc.mem_write(base + STATE_RVA + 0x0EF, struct.pack("<Q", base))
 
     # ---- fabricated kernel objects -------------------------------------
     K = 0x40000000
@@ -152,9 +165,11 @@ def main():
         uc.reg_write(reg, val)
 
     handler_addr = {}
+    handlers_entry = {}
     for idx, rva in enumerate(table):
         if rva:
             handler_addr[base + rva] = idx
+            handlers_entry[idx] = base + rva
 
     trace = []
     recent = []
@@ -232,8 +247,58 @@ def main():
     uc.hook_add(UC_HOOK_CODE, on_code)
     uc.hook_add(UC_HOOK_MEM_UNMAPPED, on_unmapped)
 
+    # ---- warm the VM state by running the driver's init programs -----------
+    warm = args.warm
+    if warm is None:
+        warm = "0x6808a,0x6d7b1,0x6d1a2,0x7503a"
+    warm_list = [int(x, 0) for x in warm.split(",") if x.strip()]
+    warm_log = []
+    if warm_list:
+        for wrva in warm_list:
+            uc.mem_write(base + STATE_RVA + 0x0FB, struct.pack("<Q", base + wrva))
+            for _r, _v in ((UC_X86_REG_RBP, base + STATE_RVA),
+                           (UC_X86_REG_RSP, rsp),
+                           (UC_X86_REG_RBX, 0), (UC_X86_REG_RDI, 0),
+                           (UC_X86_REG_R14, 0), (UC_X86_REG_RAX, 0),
+                           (UC_X86_REG_RSI, 0), (UC_X86_REG_R12, 0),
+                           (UC_X86_REG_R13, 0), (UC_X86_REG_R15, 0),
+                           (UC_X86_REG_R8, 0), (UC_X86_REG_R9, 0),
+                           (UC_X86_REG_R10, 0), (UC_X86_REG_R11, 0),
+                           (UC_X86_REG_RCX, 0), (UC_X86_REG_RDX, 0)):
+                uc.reg_write(_r, _v)
+            before = len(trace); before_f = len(faults); before_i = len(imports)
+            stop["flag"] = False
+            try:
+                uc.emu_start(handlers_entry[79], 0, count=args.max_insn)
+            except Exception as exc:  # noqa: BLE001
+                warm_log.append((wrva, len(trace) - before,
+                                 "%r errno=%s" % (exc, getattr(exc, "errno", "?")),
+                                 faults[before_f:before_f + 2],
+                                 list(imports)[before_i:before_i + 2]))
+                continue
+            warm_log.append((wrva, len(trace) - before, None, faults[before_f:before_f + 2], []))
+        # clear the warm trace so the reported trace is the control request only
+        trace.clear(); ops.clear(); recent.clear(); imports.clear(); faults.clear(); lazy.clear()
+        # restore the DEVICE_CONTROL stub's register contract
+        for _r, _v in ((UC_X86_REG_RCX, DEVOBJ), (UC_X86_REG_RDX, IRP),
+                       (UC_X86_REG_RSP, rsp), (UC_X86_REG_RBP, 0),
+                       (UC_X86_REG_RBX, 0), (UC_X86_REG_RDI, 0),
+                       (UC_X86_REG_R14, 0), (UC_X86_REG_RAX, 0),
+                       (UC_X86_REG_RSI, 0), (UC_X86_REG_R12, 0),
+                       (UC_X86_REG_R13, 0), (UC_X86_REG_R15, 0),
+                       (UC_X86_REG_R8, 0), (UC_X86_REG_R9, 0),
+                       (UC_X86_REG_R10, 0), (UC_X86_REG_R11, 0)):
+            uc.reg_write(_r, _v)
+
     print("# %s  IOCTL=%#x  in=%#x out=%#x" % (args.image, args.ioctl, args.in_len, args.out_len))
-    print("# entry=%#x (sub_2800630D8)" % (base + ENTRY_DEVICE_CONTROL))
+    if warm_log:
+        for w, n, e, fl, im in warm_log:
+            print("# warm prog %#x: %d dispatches%s" % (w, n, "" if e is None else " (stopped %s)" % e))
+            for pc, addr, kind in fl:
+                print("#    fault pc=%#x addr=%#x %s" % (pc, addr, kind))
+            for t in im:
+                print("#    target %#x" % t)
+    print("# entry=%#x (sub_2800630D8)  handler79=%#x" % (base + ENTRY_DEVICE_CONTROL, handlers_entry.get(79, 0)))
     try:
         uc.emu_start(base + ENTRY_DEVICE_CONTROL, 0, count=args.max_insn)
     except Exception as exc:  # noqa: BLE001
