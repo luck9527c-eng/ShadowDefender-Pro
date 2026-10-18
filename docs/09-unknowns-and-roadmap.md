@@ -40,7 +40,7 @@ with a slightly smaller vault (`0x45518` vs `0x48334`).
 
 ## 2. What is unknown
 
-### 2.1 `\.\DpControl` payload above the magic — RESOLVED
+### 2.1 `\\.\DpControl` payload above the magic — RESOLVED
 
 **Closed.** The payload is not parsed by the VM: the VM returns into an
 undecoded native region that contains the real demultiplexer. See
